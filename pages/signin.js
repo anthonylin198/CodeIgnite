@@ -5,7 +5,7 @@ import SignIn from "../components/SignIn";
 const SigninPage = () => {
   return (
     <div>
-      <SignIn />
+      <h1>Signin</h1>
     </div>
   );
 };
