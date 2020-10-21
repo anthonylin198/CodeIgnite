@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       {/* Hero Section */}
 
