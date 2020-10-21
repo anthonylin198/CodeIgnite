@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-styled-components": "^1.11.1",
     "mongoose": "^5.10.9",
     "next": "9.5.5",
+    "next-images": "^1.6.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-icons": "^3.11.0",
