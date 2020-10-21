@@ -27,8 +27,10 @@ const HeroSection = () => {
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
-        <HeroH1>Code Ignite</HeroH1>
-        <HeroP>Sign up and Start Coding</HeroP>
+        <HeroH1>Do a Mock Interview</HeroH1>
+        <HeroP>
+          Questions pulled from a list of msot recently used problems
+        </HeroP>
         <HeroBtnWrapper>
           <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
