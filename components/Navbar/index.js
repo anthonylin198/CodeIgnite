@@ -47,8 +47,8 @@ const index = ({ toggle }) => {
               </Link>
             </NavItem>
             <NavBtn>
-              <Link href="signup">
-                <NavBtnLink href="signup">Sign up Now</NavBtnLink>
+              <Link href="signin">
+                <NavBtnLink>Sign up Now</NavBtnLink>
               </Link>
             </NavBtn>
           </NavMenu>

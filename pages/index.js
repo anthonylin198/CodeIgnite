@@ -5,6 +5,7 @@ import InfoSection from "../components/InfoSection";
 import Services from "../components/Services";
 import React, { useState } from "react";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
+import Footer from "../components/Footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,6 +23,7 @@ export default function Home() {
       {/* About Section */}
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjOne} />
+      <Footer />
     </>
   );
 }
