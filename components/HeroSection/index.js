@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
-        <HeroH1>Pass Your Tech Interview</HeroH1>
+        <HeroH1>Code Ignite</HeroH1>
         <HeroP>Sign up and Start Coding</HeroP>
         <HeroBtnWrapper>
           <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
