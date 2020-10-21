@@ -32,10 +32,14 @@ const index = ({ toggle }) => {
               </Link>
             </NavItem>
             <NavItem>
-              <NavLinksR href="/content">Content</NavLinksR>
+              <Link href="/content">
+                <NavLinksR>Content</NavLinksR>
+              </Link>
             </NavItem>
             <NavBtn>
-              <NavBtnLink href="signup">Sign up</NavBtnLink>
+              <Link href="signup">
+                <NavBtnLink href="signup">Sign up</NavBtnLink>
+              </Link>
             </NavBtn>
           </NavMenu>
         </NavbarContainer>
