@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
+import Services from "../components/Services";
 import React, { useState } from "react";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
 export default function Home() {
@@ -17,9 +18,10 @@ export default function Home() {
       <Navbar toggle={toggle} />
       {/* Hero Section */}
       <HeroSection />
+      <Services />
       {/* About Section */}
-      <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjOne} />
     </>
   );
 }
