@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "Learn Code",
   headline: "Pass the Technical Coding Interview",
   description:
-    "Get access to the most commonly asked interview problems with guided solutions",
+    "Learn from the most commonly asked interview problems with guided solutions",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
