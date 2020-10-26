@@ -30,7 +30,13 @@ const HeroSection = () => {
         <HeroH1>CodeIgnite</HeroH1>
         <HeroP>The ultimate resource to pass your front-end interviews</HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="about"
+            smooth={true}
+            duration={500}
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
