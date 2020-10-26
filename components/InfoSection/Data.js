@@ -10,7 +10,7 @@ export const homeObjOne = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/computer.svg"),
+  img: require("../../public/images/coding.svg"),
   alt: "img",
   dark: true,
   primary: true,
@@ -29,7 +29,7 @@ export const homeObjTwo = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,
-  img: require("../../public/images/server.svg"),
+  img: require("../../public/images/react.svg"),
   alt: "img",
   dark: true,
   primary: true,
