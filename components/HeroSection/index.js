@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "./HeroElements";
 
-const img = require("./background.jpg");
+const img = require("../../public/images/background.jpg");
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -26,8 +26,8 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <StaticBg />
         <ImgBg src={img} />
+        {/* <StaticBg /> */}
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>

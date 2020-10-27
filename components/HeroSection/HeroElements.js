@@ -57,6 +57,9 @@ export const StaticBg = styled.div`
 export const ImgBg = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: top-right;
+  opacity: 0.5;
 `;
 
 export const HeroContent = styled.div`

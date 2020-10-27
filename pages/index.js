@@ -22,7 +22,7 @@ export default function Home() {
       {/* About Section */}
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      {/* <Services /> */}
+      <Services />
 
       <Footer />
     </>

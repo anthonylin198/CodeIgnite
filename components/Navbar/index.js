@@ -57,6 +57,16 @@ const index = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <Link href="/content">
+                <NavLinksR>Full Stack Course</NavLinksR>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/content">
+                <NavLinksR>Tech Interview Course</NavLinksR>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/content">
                 <NavLinksR>Content</NavLinksR>
               </Link>
             </NavItem>
