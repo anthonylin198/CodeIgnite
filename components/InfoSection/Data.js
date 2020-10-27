@@ -4,9 +4,9 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: "Learn Code",
-  headline: "Pass the Technical Coding Interview",
+  headline: "Build Full Stack Applications",
   description:
-    "Learn from the most commonly asked interview problems with guided solutions",
+    "Learn programming fundamentals to developing online games and platforms",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
@@ -23,9 +23,9 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Learn React",
-  headline: "Pass the React Coding Interview",
+  headline: "Pass the Technical Coding Interview",
   description:
-    "Go from beginner to having the ability to pass key React interviews",
+    "Learn the patterns, techniques, and top interview patterns to pass the technical coding interview",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,

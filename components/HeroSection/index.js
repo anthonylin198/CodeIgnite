@@ -4,6 +4,7 @@ import { Button } from "../ButtonElement";
 import {
   HeroContainer,
   HeroBg,
+  ImgBg,
   VideoBg,
   StaticBg,
   HeroContent,
@@ -13,6 +14,8 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
+
+const img = require("./background.jpg");
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -24,13 +27,13 @@ const HeroSection = () => {
     <HeroContainer id="home">
       <HeroBg>
         <StaticBg />
+        <ImgBg src={img} />
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
         <HeroH1>CodeIgnite</HeroH1>
         <HeroP>
-          The ultimate resource to become a full-stack software engineer and
-          pass the technical interview
+          The ultimate resource to become a full-stack software engineer
         </HeroP>
         <HeroBtnWrapper>
           <Button

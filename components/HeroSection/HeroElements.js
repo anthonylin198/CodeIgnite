@@ -52,7 +52,11 @@ export const StaticBg = styled.div`
   width: 100%;
   height: 100%;
   background: #de354c;
-  /* background: #fff; */
+`;
+
+export const ImgBg = styled.img`
+  width: 100%;
+  height: 100%;
 `;
 
 export const HeroContent = styled.div`
@@ -67,7 +71,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 72px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -84,7 +88,7 @@ export const HeroP = styled.p`
   color: #fff;
   font-size: 24px;
   text-align: center;
-  max-width: 600px;
+  max-width: 750px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
