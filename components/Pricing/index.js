@@ -8,6 +8,7 @@ import { IconContext } from "react-icons/lib";
 import {
   PricingSection,
   PricingWrapper,
+  Img,
   PricingHeading,
   PricingContainer,
   PricingCard,
@@ -20,65 +21,41 @@ import {
   PricingCardFeature,
 } from "./PricingElements";
 
+const img = require("../../public/images/react.svg");
+const img2 = require("../../public/images/coding.svg");
+
 function Pricing() {
   return (
-    <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
-      <PricingSection>
-        <PricingWrapper>
-          <PricingHeading>Our Online Coding Programs</PricingHeading>
-          <PricingContainer>
-            <PricingCard>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiRock />
-                </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCrystalBars />
-                </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            {/* <PricingCard>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCutDiamond />
-                </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard> */}
-          </PricingContainer>
-        </PricingWrapper>
-      </PricingSection>
-    </IconContext.Provider>
+    <PricingSection>
+      <PricingWrapper>
+        <PricingHeading>Our Online Coding Programs</PricingHeading>
+        <PricingContainer>
+          <PricingCard>
+            <Img src={img} />
+            <PricingCardInfo>
+              <PricingCardPlan>Full Stack Course</PricingCardPlan>
+              <PricingCardLength>
+                The Full stack course is designed for students to learn the
+                fundamentals of Javascript to being able to create applications
+              </PricingCardLength>
+              <Button primary>Learn More</Button>
+            </PricingCardInfo>
+          </PricingCard>
+          <PricingCard>
+            <Img src={img2} />
+            <PricingCardInfo>
+              <PricingCardPlan>Coding Interview Course</PricingCardPlan>
+              <PricingCardLength>
+                Coding Interview Course is designed to take a student from
+                fundamentals to having the ability to pass the technical coding
+                interview
+              </PricingCardLength>
+              <Button primary>Learn More</Button>
+            </PricingCardInfo>
+          </PricingCard>
+        </PricingContainer>
+      </PricingWrapper>
+    </PricingSection>
   );
 }
 export default Pricing;
