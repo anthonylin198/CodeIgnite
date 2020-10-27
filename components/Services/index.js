@@ -14,7 +14,7 @@ import img1 from "../../public/images/server.svg";
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Coding Programs</ServicesH1>
+      <ServicesH1>Why Us</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={img1} />
@@ -24,6 +24,21 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon src={img1} />
           <ServicesH2>Algorithms Course</ServicesH2>
+          <ServicesP>We help you do a lot of things</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={img1} />
+          <ServicesH2>Career Course</ServicesH2>
+          <ServicesP>We help you do a lot of things</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={img1} />
+          <ServicesH2>Career Course</ServicesH2>
+          <ServicesP>We help you do a lot of things</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={img1} />
+          <ServicesH2>Career Course</ServicesH2>
           <ServicesP>We help you do a lot of things</ServicesP>
         </ServicesCard>
         <ServicesCard>
