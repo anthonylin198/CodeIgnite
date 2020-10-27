@@ -52,6 +52,7 @@ export const StaticBg = styled.div`
   width: 100%;
   height: 100%;
   background: #de354c;
+  /* background: #fff; */
 `;
 
 export const HeroContent = styled.div`

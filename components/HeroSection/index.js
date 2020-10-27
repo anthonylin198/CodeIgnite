@@ -28,7 +28,10 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>CodeIgnite</HeroH1>
-        <HeroP>The ultimate resource to pass your front-end interviews</HeroP>
+        <HeroP>
+          The ultimate resource to become a full-stack software engineer and
+          pass the technical interview
+        </HeroP>
         <HeroBtnWrapper>
           <Button
             to="about"
