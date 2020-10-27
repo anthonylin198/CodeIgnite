@@ -34,7 +34,7 @@ const index = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <Link href="/">
-            <NavLogo>Home</NavLogo>
+            <NavLogo>CodeIgnite</NavLogo>
           </Link>
           <MobileIcon onClick={toggle}>
             <FaBars />
