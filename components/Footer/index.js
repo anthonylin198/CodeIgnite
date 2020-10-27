@@ -44,7 +44,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo>Home</SocialLogo>
+            {/* <SocialLogo>Home</SocialLogo> */}
             <WebsiteRights>CodeIgnite © 2020 All rights reserved</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
