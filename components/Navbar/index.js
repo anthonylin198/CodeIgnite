@@ -65,11 +65,6 @@ const index = ({ toggle }) => {
                 <NavLinksR>Tech Interview Course</NavLinksR>
               </Link>
             </NavItem>
-            <NavItem>
-              <Link href="/content">
-                <NavLinksR>Content</NavLinksR>
-              </Link>
-            </NavItem>
             <NavBtn>
               <Link href="signin">
                 <NavBtnLink>Sign up Now</NavBtnLink>
