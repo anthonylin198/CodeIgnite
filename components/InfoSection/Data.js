@@ -3,7 +3,7 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Learn Code",
+  topLine: "Full Stack",
   headline: "Build Full Stack Applications",
   description:
     "Learn programming fundamentals to developing online games and platforms",
@@ -22,7 +22,7 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Learn React",
+  topLine: "Coding Interview",
   headline: "Pass the Technical Coding Interview",
   description:
     "Learn the patterns, techniques, and top interview patterns to pass the technical coding interview",
