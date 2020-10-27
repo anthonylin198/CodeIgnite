@@ -19,11 +19,11 @@ export default function Home() {
       <Navbar toggle={toggle} />
       {/* Hero Section */}
       <HeroSection />
+      {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}
       <Services />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-
       <Footer />
     </>
   );

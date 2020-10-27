@@ -26,14 +26,15 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        {/* <ImgBg src={img} /> */}
-        <StaticBg />
+        <ImgBg src={img} />
+        {/* <StaticBg /> */}
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
         <HeroH1>CodeIgnite</HeroH1>
         <HeroP>
-          The ultimate resource to learn modern full-stack software engineering
+          The ultimate online resource to learn modern full-stack software
+          engineering
         </HeroP>
         <HeroBtnWrapper>
           <Button
