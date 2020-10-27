@@ -20,9 +20,9 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
       {/* About Section */}
+      <Services />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <Services />
 
       <Footer />
     </>
