@@ -39,7 +39,7 @@ function Pricing() {
                 fundamentals of Javascript to being able to create applications
                 ranging from games to chat apps
               </PricingCardLength>
-              <Button primary>Learn More</Button>
+              <Button to="/">Learn More</Button>
             </PricingCardInfo>
           </PricingCard>
           <PricingCard>
@@ -51,7 +51,7 @@ function Pricing() {
                 fundamentals to having the ability to pass the technical coding
                 interview
               </PricingCardLength>
-              <Button primary>Learn More</Button>
+              <Button to="/">Learn More</Button>
             </PricingCardInfo>
           </PricingCard>
         </PricingContainer>
