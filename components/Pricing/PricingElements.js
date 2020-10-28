@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PricingSection = styled.div`
-  padding: 50px 0 160px;
+  padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

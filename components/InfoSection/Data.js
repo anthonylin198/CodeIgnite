@@ -10,7 +10,7 @@ export const homeObjOne = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/coding.svg"),
+  img: require("../../public/images/react.svg"),
   alt: "img",
   dark: true,
   primary: true,
@@ -19,9 +19,9 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
   id: "about2",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: "Coding Interview",
   headline: "Pass the Technical Coding Interview",
   description:
@@ -29,7 +29,7 @@ export const homeObjTwo = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,
-  img: require("../../public/images/react.svg"),
+  img: require("../../public/images/coding.svg"),
   alt: "img",
   dark: true,
   primary: true,
