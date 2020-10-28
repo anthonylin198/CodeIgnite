@@ -57,7 +57,7 @@ export const PricingCard = styled.a`
     color: #1c2237;
   }
   @media screen and (max-width: 960px) {
-    width: 90%;
+    width: 95%;
     &:hover {
       transform: none;
     }
