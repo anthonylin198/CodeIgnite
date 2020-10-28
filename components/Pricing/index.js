@@ -1,6 +1,8 @@
 import React from "react";
 import { LinkButton } from "../ButtonElement";
 
+import Link from "next/link";
+
 import {
   PricingSection,
   PricingWrapper,
@@ -35,7 +37,9 @@ function Pricing() {
                 fundamentals of Javascript to being able to create applications
                 ranging from games to chat apps
               </PricingCardLength>
-              <LinkButton href="/fullstack">Learn More</LinkButton>
+              <Link href="fullstack">
+                <LinkButton>Learn More</LinkButton>
+              </Link>
             </PricingCardInfo>
           </PricingCard>
           <PricingCard>
@@ -47,7 +51,9 @@ function Pricing() {
                 fundamentals to having the ability to pass the technical coding
                 interview. asdasdasdasdasd
               </PricingCardLength>
-              <LinkButton href="/codinginterview">Learn More</LinkButton>
+              <Link href="codinginterview">
+                <LinkButton>Learn More</LinkButton>
+              </Link>
             </PricingCardInfo>
           </PricingCard>
         </PricingContainer>
