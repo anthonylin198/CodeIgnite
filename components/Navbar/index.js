@@ -52,7 +52,7 @@ const index = ({ toggle }) => {
                 exact="true"
                 offset={-70}
               >
-                About
+                Home
               </NavLinks>
               {/* <Link href="/about">
                 <NavLinksR>About</NavLinksR>
