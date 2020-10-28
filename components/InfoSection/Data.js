@@ -7,7 +7,7 @@ export const homeObjOne = {
   headline: "Build Full Stack Applications",
   description:
     "Learn programming fundamentals to developing online games and platforms",
-  buttonLabel: "Learn More",
+  buttonLabel: "Course Syllabus",
   // Change order of the image
   imgStart: false,
   img: require("../../public/images/react.svg"),
@@ -26,7 +26,7 @@ export const homeObjTwo = {
   headline: "Pass the Technical Coding Interview",
   description:
     "Learn the patterns, techniques, and top interview patterns to pass the technical coding interview",
-  buttonLabel: "Learn More",
+  buttonLabel: "Course Syllabus",
   // Change order of the image
   imgStart: true,
   img: require("../../public/images/coding.svg"),
