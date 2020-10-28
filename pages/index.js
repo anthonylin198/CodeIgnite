@@ -23,9 +23,9 @@ export default function Home() {
       <PricingSection />
       {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}
-      <Services />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
+      {/* <Services /> */}
+      {/* <InfoSection {...homeObjOne} /> */}
+      {/* <InfoSection {...homeObjTwo} /> */}
       <Footer />
     </>
   );
