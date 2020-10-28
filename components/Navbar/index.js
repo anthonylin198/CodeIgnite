@@ -56,7 +56,7 @@ const index = ({ toggle }) => {
               </Link> */}
             </NavItem>
             <NavItem>
-              <Link href="/content">
+              <Link href="/fullstack">
                 <NavLinksR>Full Stack Course</NavLinksR>
               </Link>
             </NavItem>

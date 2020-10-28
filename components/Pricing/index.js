@@ -37,6 +37,7 @@ function Pricing() {
               <PricingCardLength>
                 The Full stack course is designed for students to learn the
                 fundamentals of Javascript to being able to create applications
+                ranging from games to chat apps
               </PricingCardLength>
               <Button primary>Learn More</Button>
             </PricingCardInfo>
