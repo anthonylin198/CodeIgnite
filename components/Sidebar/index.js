@@ -24,11 +24,11 @@ const Sidebar = ({ isOpen, toggle }) => {
           <Link href="/about" onClick={toggle}>
             <SidebarLinkR>About</SidebarLinkR>
           </Link>
-          <Link href="/content" onClick={toggle}>
-            <SidebarLinkR>Content</SidebarLinkR>
+          <Link href="/fullstack" onClick={toggle}>
+            <SidebarLinkR>fullstack course</SidebarLinkR>
           </Link>
-          <Link href="/signup" onClick={toggle}>
-            <SidebarLinkR>Signup</SidebarLinkR>
+          <Link href="/coding interview" onClick={toggle}>
+            <SidebarLinkR>coding interview course</SidebarLinkR>
           </Link>
         </SidebarMenu>
         <SideBtnWrap>
