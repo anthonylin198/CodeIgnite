@@ -45,7 +45,7 @@ function Pricing() {
           <PricingCard>
             <Img src={img2} />
             <PricingCardInfo>
-              <PricingCardPlan>Coding Interview Course</PricingCardPlan>
+              <PricingCardPlan>Tech Interview</PricingCardPlan>
               <PricingCardLength>
                 Coding Interview Course is designed to take a student from
                 fundamentals to having the ability to pass the technical coding

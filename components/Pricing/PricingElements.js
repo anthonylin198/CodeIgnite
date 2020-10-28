@@ -23,6 +23,7 @@ export const PricingWrapper = styled.div`
 `;
 
 export const PricingHeading = styled.h1`
+  text-align: center;
   color: black;
   font-size: 48px;
   margin-bottom: 24px;
