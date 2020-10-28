@@ -1,10 +1,6 @@
 import React from "react";
-import { Button } from "../ButtonElement";
-import { AiFillThunderbolt } from "react-icons/ai";
-import { GiCrystalBars } from "react-icons/gi";
-import { GiCutDiamond, GiRock } from "react-icons/gi";
-import { GiFloatingCrystal } from "react-icons/gi";
-import { IconContext } from "react-icons/lib";
+import { LinkButton } from "../ButtonElement";
+
 import {
   PricingSection,
   PricingWrapper,
@@ -39,7 +35,7 @@ function Pricing() {
                 fundamentals of Javascript to being able to create applications
                 ranging from games to chat apps
               </PricingCardLength>
-              <Button to="/">Learn More</Button>
+              <LinkButton href="/fullstack">Learn More</LinkButton>
             </PricingCardInfo>
           </PricingCard>
           <PricingCard>
@@ -51,7 +47,7 @@ function Pricing() {
                 fundamentals to having the ability to pass the technical coding
                 interview
               </PricingCardLength>
-              <Button to="/">Learn More</Button>
+              <LinkButton href="/codinginterview">Learn More</LinkButton>
             </PricingCardInfo>
           </PricingCard>
         </PricingContainer>
