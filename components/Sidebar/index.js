@@ -21,13 +21,10 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <Link href="/about" onClick={toggle}>
-            <SidebarLinkR>About</SidebarLinkR>
-          </Link>
           <Link href="/fullstack" onClick={toggle}>
             <SidebarLinkR>fullstack course</SidebarLinkR>
           </Link>
-          <Link href="/coding interview" onClick={toggle}>
+          <Link href="/codinginterview" onClick={toggle}>
             <SidebarLinkR>coding interview course</SidebarLinkR>
           </Link>
         </SidebarMenu>
