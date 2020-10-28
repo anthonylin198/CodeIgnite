@@ -4,13 +4,14 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   /* Implement nav scrolling */
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  background: black;
   height: 8vh;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 10;
 
@@ -69,6 +70,10 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  &.active {
+    border-bottom: 3px solid #01bf71;
+    color: red;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -80,6 +85,9 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
+  :hover {
+    border-bottom: 3px solid #01bf71;
+  }
   &.active {
     border-bottom: 3px solid #01bf71;
   }
@@ -94,11 +102,12 @@ export const NavLinksR = styled.a`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
+  &:hover {
     border-bottom: 3px solid #01bf71;
   }
 `;
+
+// Just do if we are on the page, then border bottom
 
 export const NavBtn = styled.nav`
   display: flex;

@@ -24,7 +24,7 @@ const img2 = require("../../public/images/coding.svg");
 
 function Pricing() {
   return (
-    <PricingSection>
+    <PricingSection id="about">
       <PricingWrapper>
         <PricingHeading>Our Online Coding Programs</PricingHeading>
         <PricingContainer>

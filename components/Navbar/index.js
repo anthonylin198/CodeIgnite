@@ -13,6 +13,7 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const index = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -24,6 +25,8 @@ const index = ({ toggle }) => {
       setScrollNav(false);
     }
   };
+
+  const router = useRouter();
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
@@ -47,7 +50,7 @@ const index = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-70}
               >
                 About
               </NavLinks>
@@ -55,12 +58,14 @@ const index = ({ toggle }) => {
                 <NavLinksR>About</NavLinksR>
               </Link> */}
             </NavItem>
-            <NavItem>
+            <NavItem className={router.asPath == "/fullstack" ? "active" : ""}>
               <Link href="/fullstack">
                 <NavLinksR>Full Stack Course</NavLinksR>
               </Link>
             </NavItem>
-            <NavItem>
+            <NavItem
+              className={router.asPath == "/codinginterview" ? "active" : ""}
+            >
               <Link href="/codinginterview">
                 <NavLinksR>Tech Interview Course</NavLinksR>
               </Link>
