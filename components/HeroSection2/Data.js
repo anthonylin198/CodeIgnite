@@ -1,6 +1,6 @@
 export const splash = {
   id: "fullstack",
-  lightBg: false,
+  lightBg: true,
   lightText: true,
   lightTextDesc: true,
   topLine: "Full Stack",

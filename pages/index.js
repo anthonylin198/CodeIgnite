@@ -6,7 +6,11 @@ import InfoSection from "../components/InfoSection";
 import PricingSection from "../components/Pricing";
 import Services from "../components/Services";
 import React, { useState } from "react";
-import { homeObjOne, homeObjTwo } from "../components/HeroSection2/Data";
+import {
+  homeObjOne,
+  homeObjTwo,
+  splash,
+} from "../components/HeroSection2/Data";
 import Footer from "../components/Footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +24,7 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       {/* Hero Section */}
-      <HeroSection2 />
+      <HeroSection2 {...splash} />
       <PricingSection />
       {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}

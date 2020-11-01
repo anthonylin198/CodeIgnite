@@ -4,14 +4,14 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   /* Implement nav scrolling */
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
-  background: black;
+  /* background: black; */
   height: 8vh;
-  /* margin-top: -100px; */
+  margin-top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 10;
 
@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1500px;
 `;
 
 export const NavLogo = styled.a`
