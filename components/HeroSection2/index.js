@@ -13,7 +13,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-} from "./InfoElements";
+} from "./HeroElements";
 
 import { Button } from "../ButtonElement.js";
 
