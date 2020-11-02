@@ -51,7 +51,7 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   padding: 0 15px;
   grid-area: col2;
 `;
@@ -59,7 +59,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 `;
 
 export const TopLine = styled.p`
