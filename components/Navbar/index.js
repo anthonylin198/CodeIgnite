@@ -44,16 +44,9 @@ const index = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-70}
-              >
-                Home
-              </NavLinks>
+              <Link href="/">
+                <NavLinksR>Home</NavLinksR>
+              </Link>
               {/* <Link href="/about">
                 <NavLinksR>About</NavLinksR>
               </Link> */}

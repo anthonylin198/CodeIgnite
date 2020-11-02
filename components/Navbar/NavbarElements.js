@@ -3,15 +3,16 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* Implement nav scrolling */
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
-  background: black;
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgba(255, 255, 255, 0.9);" : "transparent"};
+  /* background: black; */
   height: 8vh;
-  /* margin-top: -100px; */
+  margin-top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 10;
 
@@ -27,19 +28,22 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1300px;
 `;
 
 export const NavLogo = styled.a`
-  color: #fff;
+  color: #000;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -77,7 +81,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -95,7 +99,7 @@ export const NavLinks = styled(LinkS)`
 
 // Nav Link For Content router
 export const NavLinksR = styled.a`
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;

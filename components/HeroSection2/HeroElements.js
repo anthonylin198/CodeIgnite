@@ -1,21 +1,25 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #fff;
+  color: #f8f8ff;
   background: ${({ lightBg }) =>
-    lightBg ? "#f9f9f9" : "rgba(224, 130, 131, 0.7)"};
+    lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
+
+  /* border-bottom-left-radius: 17.5%; */
+  /* border-bottom-right-radius: 10%; */
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    border-bottom-left-radius: 0%;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -25,6 +29,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
+  /* grid-template-columns: 1fr 2fr; */
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -50,7 +55,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  /* padding-bottom: 60px; */
+  padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
@@ -66,7 +71,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   color: #000;
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -80,7 +85,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.7;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 

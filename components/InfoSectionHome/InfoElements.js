@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) =>
-    lightBg ? "#f9f9f9" : "rgba(224, 130, 131, 0.7)"};
+  background: ${({ lightBg }) => (lightBg ? "#f8f8ff" : "#010606")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -13,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 60vh;
+  height: 45vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -65,8 +64,8 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   color: #000;
-  margin-bottom: 24px;
-  font-size: 48px;
+  margin-bottom: 30px;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -80,7 +79,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
@@ -90,7 +89,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 400px;
   height: 100%;
 `;
 

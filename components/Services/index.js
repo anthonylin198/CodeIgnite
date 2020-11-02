@@ -14,36 +14,21 @@ import img1 from "../../public/images/server.svg";
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Why Us</ServicesH1>
+      <ServicesH1>Unique Online Learning Program</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={img1} />
-          <ServicesH2>Full Stack Course</ServicesH2>
+          <ServicesH2>College Level Portfolio</ServicesH2>
           <ServicesP>We help you do a lot of things</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={img1} />
-          <ServicesH2>Algorithms Course</ServicesH2>
+          <ServicesH2>Independent Learnings</ServicesH2>
           <ServicesP>We help you do a lot of things</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={img1} />
-          <ServicesH2>Career Course</ServicesH2>
-          <ServicesP>We help you do a lot of things</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={img1} />
-          <ServicesH2>Career Course</ServicesH2>
-          <ServicesP>We help you do a lot of things</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={img1} />
-          <ServicesH2>Career Course</ServicesH2>
-          <ServicesP>We help you do a lot of things</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={img1} />
-          <ServicesH2>Career Course</ServicesH2>
+          <ServicesH2>Guided Support</ServicesH2>
           <ServicesP>We help you do a lot of things</ServicesP>
         </ServicesCard>
       </ServicesWrapper>

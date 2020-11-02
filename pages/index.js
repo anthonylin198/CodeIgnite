@@ -1,10 +1,18 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
+import HeroSection2 from "../components/HeroSection2";
+import InfoSectionHome from "../components/InfoSectionHome";
+import {
+  homeInfoOne,
+  homeInfoTwo,
+  homeInfoThree,
+} from "../components/InfoSectionHome/Data";
 import InfoSection from "../components/InfoSection";
 import PricingSection from "../components/Pricing";
 import Services from "../components/Services";
 import React, { useState } from "react";
+import { splash } from "../components/HeroSection2/Data";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
 export default function Home() {
@@ -19,11 +27,15 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       {/* Hero Section */}
-      <HeroSection />
+      <HeroSection2 {...splash} />
+      {/* <Services /> */}
+      {/* <InfoSectionHome {...homeInfoOne} /> */}
+      {/* <InfoSectionHome {...homeInfoTwo} /> */}
       <PricingSection />
+
+      {/* <InfoSectionHome {...homeInfoThree} /> */}
       {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}
-      {/* <Services /> */}
       {/* <InfoSection {...homeObjOne} /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
       <Footer />
