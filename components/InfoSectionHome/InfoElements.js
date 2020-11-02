@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 50vh;
+  height: 45vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -49,7 +49,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 `;
 
 export const TopLine = styled.p`
@@ -89,7 +89,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 400px;
   height: 100%;
 `;
 

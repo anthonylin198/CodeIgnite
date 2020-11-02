@@ -10,7 +10,7 @@ export const homeInfoOne = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/react.svg"),
+  img: require("../../public/images/learning.svg"),
   alt: "img",
   dark: true,
   primary: true,
@@ -29,7 +29,7 @@ export const homeInfoTwo = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,
-  img: require("../../public/images/react.svg"),
+  img: require("../../public/images/teacher.svg"),
   alt: "img",
   dark: true,
   primary: true,
@@ -48,7 +48,7 @@ export const homeInfoThree = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/react.svg"),
+  img: require("../../public/images/book.svg"),
   alt: "img",
   dark: true,
   primary: true,
