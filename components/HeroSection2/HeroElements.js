@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #fff;
+  color: #f8f8ff;
   background: ${({ lightBg }) =>
     lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
 
@@ -17,7 +17,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   max-width: 1300px;
   margin-right: auto;

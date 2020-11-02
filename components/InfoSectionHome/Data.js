@@ -42,7 +42,7 @@ export const homeInfoThree = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Dynamic Software",
-  headline: "Quality Teaching",
+  headline: "Dynamic software",
   description:
     "Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
   buttonLabel: "Learn More",
