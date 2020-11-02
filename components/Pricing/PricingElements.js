@@ -26,9 +26,6 @@ export const PricingHeading = styled.h1`
   color: black;
   font-size: 48px;
   margin-bottom: 24px;
-  @media screen and (max-width: 960px) {
-    font-size: 32;
-  }
 `;
 
 export const PricingContainer = styled.div`

@@ -42,7 +42,7 @@ export const NavLogo = styled.a`
   font-weight: bold;
   text-decoration: none;
   @media screen and (max-width: 768px) {
-    display: none;
+    font-size: 1rem;
   }
 `;
 
@@ -56,7 +56,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: #000;
   }
 `;
 
