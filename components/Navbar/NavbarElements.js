@@ -3,7 +3,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* Implement nav scrolling */
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
   /* background: black; */
   height: 8vh;
   margin-top: -100px;
@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.a`
-  color: #fff;
+  color: #000;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -77,7 +77,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -95,7 +95,7 @@ export const NavLinks = styled(LinkS)`
 
 // Nav Link For Content router
 export const NavLinksR = styled.a`
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;

@@ -1,12 +1,12 @@
 export const splash = {
   id: "fullstack",
   lightBg: true,
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Full Stack",
-  headline: "Build Full Stack Applications",
+  headline: "Remote Coding Courses for Kids",
   description:
-    "Learn programming fundamentals to developing online games and platforms",
+    "Our computer science programs set students up to become independent thinkers and college level/internship capabilities",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
@@ -14,5 +14,5 @@ export const splash = {
   alt: "img",
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
