@@ -5,6 +5,9 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) =>
     lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
 
+  border-bottom-left-radius: 17.5%;
+  /* border-bottom-right-radius: 10%; */
+
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -15,7 +18,7 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   height: 70vh;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -25,6 +28,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
+  /* grid-template-columns: 1fr 2fr; */
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
