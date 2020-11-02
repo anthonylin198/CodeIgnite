@@ -5,11 +5,12 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) =>
     lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
 
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 17.5%;
+  /* border-bottom-right-radius: 10%; */
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    border-bottom-left-radius: 0%;
   }
 `;
 

@@ -6,7 +6,7 @@ export const homeInfoOne = {
   topLine: "Full Stack",
   headline: "A Unique Learning Program",
   description:
-    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
+    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
@@ -25,7 +25,7 @@ export const homeInfoTwo = {
   topLine: "Full Stack",
   headline: "Quality Teaching",
   description:
-    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
+    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,
@@ -41,10 +41,10 @@ export const homeInfoThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Full Stack",
-  headline: "Dynamic Software",
+  topLine: "Dynamic Software",
+  headline: "Quality Teaching",
   description:
-    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
+    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
