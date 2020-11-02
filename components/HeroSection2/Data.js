@@ -1,8 +1,8 @@
 export const splash = {
   id: "fullstack",
   lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: "Full Stack",
   headline: "Remote Coding Courses for Kids",
   description:
@@ -14,5 +14,5 @@ export const splash = {
   alt: "img",
   dark: true,
   primary: true,
-  darkText: true,
+  darkText: false,
 };

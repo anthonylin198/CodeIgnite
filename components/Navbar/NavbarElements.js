@@ -4,9 +4,10 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   /* Implement nav scrolling */
   background: ${({ scrollNav }) =>
-    scrollNav ? "rgba(255, 255, 255, 0.9);" : "transparent"};
+    // You can just write transparemt for the second one
+    scrollNav ? "rgba(255, 255, 255, 0.9);" : "white"};
   /* background: black; */
-  height: 8vh;
+  height: 6vh;
   margin-top: -100px;
   display: flex;
   justify-content: center;
