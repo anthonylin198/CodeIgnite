@@ -30,7 +30,7 @@ export default function Home() {
       <HeroSection2 {...splash} />
       <InfoSectionHome {...homeInfoOne} />
       <InfoSectionHome {...homeInfoTwo} />
-      <InfoSectionHome {...homeInfoThree} />
+      {/* <InfoSectionHome {...homeInfoThree} /> */}
       <PricingSection />
       {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}

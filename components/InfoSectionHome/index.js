@@ -44,7 +44,6 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
                 {/* <Subtitle darkText={darkText}>{description}</Subtitle> */}
                 {/* <BtnWrap>
                   <Button
