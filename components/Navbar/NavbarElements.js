@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   /* Implement nav scrolling */
   background: ${({ scrollNav }) =>
     // You can just write transparemt for the second one
-    scrollNav ? "rgba(255, 255, 255, 0.9);" : "transparent"};
+    scrollNav ? "black" : "transparent"};
   height: 8vh;
   margin-top: -100px;
   display: flex;
