@@ -19,8 +19,8 @@ import {
   PricingCardFeature,
 } from "./PricingElements";
 
-const img = require("../../public/images/react.svg");
-const img2 = require("../../public/images/coding.svg");
+const img = require("../../public/images/student1.jpg");
+const img2 = require("../../public/images/interview.jpg");
 
 function Pricing() {
   return (

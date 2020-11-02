@@ -78,9 +78,11 @@ export const PricingCardInfo = styled.div`
 `;
 
 export const Img = styled.img`
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   width: 100%;
-  height: 45%;
+  height: 50%;
+  object-fit: cover;
+  object-position: top;
   background-color: #fff;
 `;
 
