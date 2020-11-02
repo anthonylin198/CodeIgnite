@@ -48,9 +48,9 @@ export const PricingContainer = styled.div`
 export const PricingCard = styled.div`
   background: #242424;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  height: fit-content;
+  /* height: fit-content; */
   width: 25vw;
-  /* height: 600px; */
+  height: 600px;
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
@@ -62,6 +62,7 @@ export const PricingCard = styled.div`
     color: #1c2237;
   }
   @media screen and (max-width: 960px) {
+    height: 700px;
     width: 95%;
     &:hover {
       transform: none;
