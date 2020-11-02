@@ -26,7 +26,7 @@ function Pricing() {
   return (
     <PricingSection id="about">
       <PricingWrapper>
-        <PricingHeading>Our Online Coding Programs</PricingHeading>
+        <PricingHeading>Our Coding Curriculums</PricingHeading>
         <PricingContainer>
           <PricingCard>
             <Img src={img} />
