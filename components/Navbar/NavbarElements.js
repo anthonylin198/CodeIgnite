@@ -3,7 +3,8 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* Implement nav scrolling */
-  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgba(255, 255, 255, 0.9);" : "transparent"};
   /* background: black; */
   height: 8vh;
   margin-top: -100px;
@@ -34,7 +35,7 @@ export const NavLogo = styled.a`
   color: #000;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;

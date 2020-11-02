@@ -6,11 +6,8 @@ import InfoSection from "../components/InfoSection";
 import PricingSection from "../components/Pricing";
 import Services from "../components/Services";
 import React, { useState } from "react";
-import {
-  homeObjOne,
-  homeObjTwo,
-  splash,
-} from "../components/HeroSection2/Data";
+import { splash } from "../components/HeroSection2/Data";
+import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
