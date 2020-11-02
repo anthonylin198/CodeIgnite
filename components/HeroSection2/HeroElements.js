@@ -26,6 +26,7 @@ export const InfoWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 60vh;
+    text-align: center;
   }
 `;
 
@@ -95,6 +96,9 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgWrap = styled.div`
