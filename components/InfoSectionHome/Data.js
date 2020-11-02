@@ -23,9 +23,9 @@ export const homeInfoTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Full Stack",
-  headline: "Quality Teaching",
+  headline: "Innovative Curriculum",
   description:
-    "Code-Ignite offers affordable structured remote online course to students from ages 8-18.",
+    "Our curriculum is developed by software engineers and recent college graduates.",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: true,
