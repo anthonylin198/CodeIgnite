@@ -10,7 +10,7 @@ export const homeInfoOne = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/learning.svg"),
+  img: require("../../public/images/student1.jpg"),
   alt: "img",
   dark: true,
   primary: true,

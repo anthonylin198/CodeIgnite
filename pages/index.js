@@ -29,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection2 {...splash} />
       {/* <Services /> */}
-      {/* <InfoSectionHome {...homeInfoOne} /> */}
+      <InfoSectionHome {...homeInfoOne} />
       {/* <InfoSectionHome {...homeInfoTwo} /> */}
       <PricingSection />
 
