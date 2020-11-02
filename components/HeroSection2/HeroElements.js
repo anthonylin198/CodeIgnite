@@ -6,10 +6,12 @@ export const InfoContainer = styled.div`
 
   /* border-bottom-left-radius: 17.5%; */
   /* border-bottom-right-radius: 10%; */
+  /* margin-bottom: -5px; */
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
     border-bottom-left-radius: 0%;
+    margin-bottom: -0.5rem;
   }
 `;
 
