@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const PricingSection = styled.div`
+  margin-top: -15rem;
   padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #fff;
+  @media screen and (max-width: 960px) {
+    margin-top: -2rem;
+  }
 `;
 
 export const PricingWrapper = styled.div`

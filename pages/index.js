@@ -29,8 +29,8 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection2 {...splash} />
       {/* <Services /> */}
-      <InfoSectionHome {...homeInfoOne} />
-      <InfoSectionHome {...homeInfoTwo} />
+      {/* <InfoSectionHome {...homeInfoOne} /> */}
+      {/* <InfoSectionHome {...homeInfoTwo} /> */}
       <PricingSection />
 
       {/* <InfoSectionHome {...homeInfoThree} /> */}
