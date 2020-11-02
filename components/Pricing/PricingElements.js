@@ -97,6 +97,7 @@ export const PricingCardLength = styled.p`
   text-align: left;
   font-size: 18px;
   margin-bottom: 24px;
+  line-height: 1.7;
 `;
 
 export const PricingCardFeatures = styled.ul`
