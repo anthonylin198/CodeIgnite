@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) =>
     lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
 
-  border-bottom-left-radius: 17.5%;
+  /* border-bottom-left-radius: 17.5%; */
   /* border-bottom-right-radius: 10%; */
 
   @media screen and (max-width: 768px) {
@@ -85,7 +85,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.7;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
