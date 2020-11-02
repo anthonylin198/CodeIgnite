@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) =>
-    lightBg ? "rgba(224, 130, 131, 0.7)" : "#010606"};
-
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -16,9 +12,9 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -28,7 +24,6 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-  /* grid-template-columns: 1fr 2fr; */
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -69,8 +64,8 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   color: #000;
-  margin-bottom: 24px;
-  font-size: 60px;
+  margin-bottom: 30px;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
