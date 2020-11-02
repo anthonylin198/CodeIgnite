@@ -5,9 +5,8 @@ export const Nav = styled.nav`
   /* Implement nav scrolling */
   background: ${({ scrollNav }) =>
     // You can just write transparemt for the second one
-    scrollNav ? "rgba(255, 255, 255, 0.9);" : "white"};
-  /* background: black; */
-  height: 6vh;
+    scrollNav ? "rgba(255, 255, 255, 0.9);" : "transparent"};
+  height: 8vh;
   margin-top: -100px;
   display: flex;
   justify-content: center;
@@ -33,7 +32,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.a`
-  color: #000;
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 2rem;
@@ -57,7 +56,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #000;
+    color: #fff;
   }
 `;
 
@@ -82,7 +81,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -100,7 +99,7 @@ export const NavLinks = styled(LinkS)`
 
 // Nav Link For Content router
 export const NavLinksR = styled.a`
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
