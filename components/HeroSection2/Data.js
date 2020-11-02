@@ -10,7 +10,7 @@ export const splash = {
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/test.svg"),
+  img: require("../../public/images/orangetest.svg"),
   alt: "img",
   dark: true,
   primary: true,

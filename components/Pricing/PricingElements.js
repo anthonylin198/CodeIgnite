@@ -46,7 +46,7 @@ export const PricingContainer = styled.div`
 `;
 
 export const PricingCard = styled.div`
-  background: #242424;
+  background: #fff;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   /* height: fit-content; */
   width: 25vw;
@@ -76,7 +76,7 @@ export const PricingCardInfo = styled.div`
   /* height: 500px; */
   padding: 24px;
   align-items: center;
-  color: #fff;
+  color: #000;
 `;
 
 export const Img = styled.img`
@@ -84,7 +84,7 @@ export const Img = styled.img`
   width: 100%;
   height: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: bottom;
   background-color: #fff;
 `;
 
