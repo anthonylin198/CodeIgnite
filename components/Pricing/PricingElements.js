@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PricingSection = styled.div`
-  margin-top: -15rem;
+  margin-top: -14rem;
   padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
@@ -48,8 +48,9 @@ export const PricingContainer = styled.div`
 export const PricingCard = styled.div`
   background: #242424;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
+  height: fit-content;
   width: 25vw;
-  height: 600px;
+  /* height: 600px; */
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
@@ -71,7 +72,7 @@ export const PricingCard = styled.div`
 export const PricingCardInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 500px;
+  /* height: 500px; */
   padding: 24px;
   align-items: center;
   color: #fff;

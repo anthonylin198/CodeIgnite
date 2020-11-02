@@ -49,7 +49,7 @@ function Pricing() {
               <PricingCardLength>
                 Coding Interview Course is designed to take a student from
                 fundamentals to having the ability to pass the technical coding
-                interview. asdasdasdasdasd
+                interview. asdasdasdasdasdasdasdasdasdasdasd
               </PricingCardLength>
               <Link href="codinginterview">
                 <LinkButton>Learn More</LinkButton>
