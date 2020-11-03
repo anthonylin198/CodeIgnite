@@ -20,6 +20,11 @@ export const InfoWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
   padding-top: 5rem;
+
+  @media screen and (max-width: 768px) {
+    height: 30vh;
+    padding-top: 1.5rem;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -45,6 +50,10 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -72,7 +81,7 @@ export const Heading = styled.h1`
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 36px;
   }
 `;
 
