@@ -43,7 +43,7 @@ const index = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
+            <NavItem className={router.asPath == "/" ? "active" : ""}>
               <Link href="/">
                 <NavLinksR>Home</NavLinksR>
               </Link>

@@ -10,6 +10,7 @@ import {
   homeInfoTwo,
   homeInfoThree,
 } from "../components/InfoSectionHome/Data";
+import Demo from "../components/Demo";
 
 const fullstack = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const fullstack = () => {
       <InfoSectionHome {...homeInfoOne} />
       <InfoSectionHome {...homeInfoTwo} />
       <InfoSectionHome {...homeInfoThree} />
+      <Demo />
     </div>
   );
 };
