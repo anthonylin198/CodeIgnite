@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #f8f8ff;
-  background: ${({ lightBg }) => (lightBg ? "#36A1D4" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#2F2FA2" : "#010606")};
 
   /* border-bottom-left-radius: 17.5%; */
   /* border-bottom-right-radius: 10%; */
