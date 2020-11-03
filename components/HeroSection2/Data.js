@@ -4,9 +4,9 @@ export const splash = {
   lightText: true,
   lightTextDesc: true,
   topLine: "Full Stack",
-  headline: "Remote Coding Courses for Kids",
+  headline: "Remote Coding Courses",
   description:
-    "Our computer science programs set students up to with a college level portfolio and to become independent developers",
+    "Our computer science programs set students up to become autonomous engineers with college level portfolios",
   buttonLabel: "Learn More",
   // Change order of the image
   imgStart: false,
