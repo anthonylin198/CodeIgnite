@@ -27,6 +27,9 @@ const Signin = () => {
               <FormLabel htmlFir="for">Password</FormLabel>
               <FormInput type="password required"></FormInput>
               <FormButton type="submit">Continue</FormButton>
+              <a style={{ color: "red" }} href="fullstackcourse">
+                Go To Fullstack
+              </a>
               <Text>Forgot password</Text>
             </Form>
           </FormContent>
