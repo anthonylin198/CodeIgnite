@@ -10,7 +10,7 @@ export const homeObjOne = {
   buttonLabel: "Course Syllabus",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/react.svg"),
+  img: require("../../public/images/webapp.svg"),
   alt: "img",
   dark: true,
   primary: true,

@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 import InfoSection from "../components/InfoSection";
 import InfoSectionHome from "../components/InfoSectionHome";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
+import Features from "../components/Features";
 import {
   homeInfoOne,
   homeInfoTwo,
@@ -21,6 +22,7 @@ const fullstack = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <InfoSection {...homeObjOne} />
+      <Features />
       <InfoSectionHome {...homeInfoOne} />
       <InfoSectionHome {...homeInfoTwo} />
       <InfoSectionHome {...homeInfoThree} />
