@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
-import HeroSection2 from "../components/HeroSection2";
+import HeroSection2 from "../components/LandingPages/HeroSection2";
 import InfoSectionHome from "../components/InfoSectionHome";
 import {
   homeInfoOne,
@@ -12,7 +12,7 @@ import InfoSection from "../components/InfoSection";
 import PricingSection from "../components/Pricing";
 import Services from "../components/Services";
 import React, { useState } from "react";
-import { splash } from "../components/HeroSection2/Data";
+import { splash } from "../components/LandingPages/HeroSection2/Data";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
 export default function Home() {

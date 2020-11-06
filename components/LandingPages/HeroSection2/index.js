@@ -15,7 +15,7 @@ import {
   Img,
 } from "./HeroElements";
 
-import { Button } from "../ButtonElement.js";
+import { Button } from "../../ButtonElement.js";
 
 const InfoSection = ({
   lightBg,

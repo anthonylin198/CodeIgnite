@@ -10,7 +10,7 @@ export const splash = {
   buttonLabel: "Get Started",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/pair.svg"),
+  img: require("../../../public/images/pair.svg"),
   alt: "img",
   dark: true,
   primary: true,
