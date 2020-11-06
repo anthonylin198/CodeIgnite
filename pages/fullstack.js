@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/LandingPages/Navbar";
+import Sidebar from "../components/LandingPages/Sidebar";
 import InfoSection from "../components/InfoSection";
 import InfoSectionHome from "../components/InfoSectionHome";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
-import Features from "../components/Features";
+import Features from "../components/LandingPages/Features";
 import {
   homeInfoOne,
   homeInfoTwo,
   homeInfoThree,
 } from "../components/InfoSectionHome/Data";
-import Demo from "../components/Demo";
+import Demo from "../components/LandingPages/Demo";
 
 const fullstack = () => {
   const [isOpen, setIsOpen] = useState(false);

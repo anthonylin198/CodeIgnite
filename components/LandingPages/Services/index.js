@@ -10,7 +10,7 @@ import {
   ServicesP,
 } from "./ServicesElements";
 
-import img1 from "../../public/images/server.svg";
+import img1 from "../../../public/images/server.svg";
 const Services = () => {
   return (
     <ServicesContainer id="services">

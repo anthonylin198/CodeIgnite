@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/LandingPages/Navbar";
+import Sidebar from "../components/LandingPages/Sidebar";
 
 import InfoSection from "../components/InfoSection";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";

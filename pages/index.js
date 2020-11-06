@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/LandingPages/Navbar";
+import Sidebar from "../components/LandingPages/Sidebar";
 import HeroSection from "../components/HeroSection";
 import HeroSection2 from "../components/LandingPages/HeroSection2";
 import InfoSectionHome from "../components/InfoSectionHome";
@@ -10,11 +10,11 @@ import {
 } from "../components/InfoSectionHome/Data";
 import InfoSection from "../components/InfoSection";
 import PricingSection from "../components/Pricing";
-import Services from "../components/Services";
+import Services from "../components/LandingPages/Services";
 import React, { useState } from "react";
 import { splash } from "../components/LandingPages/HeroSection2/Data";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
-import Footer from "../components/Footer";
+import Footer from "../components/LandingPages/Footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
