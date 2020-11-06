@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElement";
+import { Button } from "../../Globals/ButtonElement";
 import {
   HeroContainer,
   HeroBg,
@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "./HeroElements";
 
-const img = require("../../public/images/background.jpg");
+const img = require("../../../public/images/background.jpg");
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);

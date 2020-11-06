@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkButton } from "../ButtonElement";
+import { LinkButton } from "../../Globals/ButtonElement";
 
 import Link from "next/link";
 
@@ -19,8 +19,8 @@ import {
   PricingCardFeature,
 } from "./PricingElements";
 
-const img = require("../../public/images/fullstack.jpg");
-const img2 = require("../../public/images/interview.jpg");
+const img = require("../../../public/images/fullstack.jpg");
+const img2 = require("../../../public/images/interview.jpg");
 
 function Pricing() {
   return (

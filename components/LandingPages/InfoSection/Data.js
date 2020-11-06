@@ -10,7 +10,7 @@ export const homeObjOne = {
   buttonLabel: "Course Syllabus",
   // Change order of the image
   imgStart: false,
-  img: require("../../public/images/webapp.svg"),
+  img: require("../../../public/images/webapp.svg"),
   alt: "img",
   dark: true,
   primary: true,
@@ -29,7 +29,7 @@ export const homeObjTwo = {
   buttonLabel: "Course Syllabus",
   // Change order of the image
   imgStart: true,
-  img: require("../../public/images/coding.svg"),
+  img: require("../../../public/images/coding.svg"),
   alt: "img",
   dark: true,
   primary: true,

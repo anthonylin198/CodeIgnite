@@ -15,7 +15,7 @@ import {
   Img,
 } from "./InfoElements";
 
-import { Button } from "../ButtonElement.js";
+import { Button } from "../../Globals/ButtonElement.js";
 
 const InfoSection = ({
   lightBg,

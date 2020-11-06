@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Navbar from "../components/LandingPages/Navbar";
 import Sidebar from "../components/LandingPages/Sidebar";
 
-import InfoSection from "../components/InfoSection";
-import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
+import InfoSection from "../components/LandingPages/InfoSection";
+import {
+  homeObjOne,
+  homeObjTwo,
+} from "../components/LandingPages/InfoSection/Data";
 const codinginterview = () => {
   const [isOpen, setIsOpen] = useState(false);
 
