@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Learn More</FooterLinkTitle>
@@ -41,8 +41,9 @@ const Footer = () => {
               <FooterLink>Terms of Service</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
+        </FooterLinksContainer> */}
+        <WebsiteRights>CodeIgnite © 2020 All rights reserved</WebsiteRights>
+        {/* <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo>Home</SocialLogo>
             <WebsiteRights>CodeIgnite © 2020 All rights reserved</WebsiteRights>
@@ -52,7 +53,7 @@ const Footer = () => {
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
-        </SocialMedia>
+        </SocialMedia> */}
       </FooterWrap>
     </FooterContainer>
   );
