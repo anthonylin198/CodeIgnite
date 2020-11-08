@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
-  background: grey;
+  background: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;

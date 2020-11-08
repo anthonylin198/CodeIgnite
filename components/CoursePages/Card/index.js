@@ -19,7 +19,7 @@ const Card = () => {
       </ContentContainer>
       <ButtonContainer>
         <Progress>This is progress</Progress>
-        <Button>Here button</Button>
+        <Button>Continue</Button>
       </ButtonContainer>
     </CardContainer>
   );
