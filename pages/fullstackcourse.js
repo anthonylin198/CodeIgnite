@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Title from "../components/CoursePages/Title";
 import Progress from "../components/CoursePages/Progress";
 import Category from "../components/CoursePages/Category";
-
+import NavBar from "../components/LandingPages/Navbar";
 const fullstackcourse = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
+      <NavBar toggle={toggle} />
       <Title />
       <Progress />
       <Category />
