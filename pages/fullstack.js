@@ -27,9 +27,9 @@ const fullstack = () => {
       <Navbar toggle={toggle} />
       <InfoSection {...homeObjOne} />
       <Features />
-      <InfoSectionHome {...homeInfoOne} />
-      <InfoSectionHome {...homeInfoTwo} />
-      <InfoSectionHome {...homeInfoThree} />
+      {/* <InfoSectionHome {...homeInfoOne} /> */}
+      {/* <InfoSectionHome {...homeInfoTwo} /> */}
+      {/* <InfoSectionHome {...homeInfoThree} /> */}
       <Demo />
     </div>
   );
