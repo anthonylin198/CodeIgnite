@@ -33,12 +33,4 @@ export const CategoryH1 = styled.h1`
 export const CardsContainer = styled.div`
   display: flex;
   overflow-x: auto;
-  /* @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
 `;
-
-// need to create each card to map

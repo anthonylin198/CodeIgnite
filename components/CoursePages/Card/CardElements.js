@@ -1,24 +1,9 @@
-/*
-    <CardContainer>
-      <ContentContainer>
-        <ContentTitle></ContentTitle>
-        <ContentP></ContentP>
-      </ContentContainer>
-      <ButtonContainer>
-        <Progress></Progress>
-        <Button></Button>
-      </ButtonContainer>
-    </CardContainer>
-
-
-*/
-
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
   height: 30vh;
-  width: 20vw;
-  padding: 20px 20px;
+  min-width: 400px;
+  padding: 10px 10px;
   margin-right: 10px;
   background: white;
   display: flex;
@@ -26,7 +11,7 @@ export const CardContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  width: 20vw;
+  height: 50%;
 `;
 
 export const ContentTitle = styled.h1`
@@ -41,6 +26,7 @@ export const ContentP = styled.p`
 `;
 
 export const ButtonContainer = styled.div`
+  height: 50%;
   align-items: right;
   align-items: flex-end;
 `;

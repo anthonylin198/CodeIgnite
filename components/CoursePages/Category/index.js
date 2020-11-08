@@ -18,10 +18,6 @@ const Category = () => {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
         </CardsContainer>
       </CategoryContent>
     </CategoryContainer>
