@@ -4,6 +4,7 @@ export const CategoryContainer = styled.div`
   background: grey;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 30vh;
 `;
 
@@ -31,6 +32,12 @@ export const CategoryH1 = styled.h1`
 
 export const CardsContainer = styled.div`
   display: flex;
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 // need to create each card to map
