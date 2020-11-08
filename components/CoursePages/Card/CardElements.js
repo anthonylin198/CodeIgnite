@@ -16,7 +16,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  height: 20vh;
+  height: 30vh;
   width: 20vw;
   padding: 20px 20px;
   margin-right: 10px;
@@ -26,7 +26,7 @@ export const CardContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  width: 95%;
+  width: 20vw;
 `;
 
 export const ContentTitle = styled.h1`
