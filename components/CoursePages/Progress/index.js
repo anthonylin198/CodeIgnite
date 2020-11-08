@@ -9,7 +9,6 @@ const Progress = () => {
   return (
     <ProgressContainer>
       <ProgressLabel>Your Progress</ProgressLabel>
-      <ProgressLabel>0/30 sections complete</ProgressLabel>
     </ProgressContainer>
   );
 };
