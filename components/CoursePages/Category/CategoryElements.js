@@ -18,7 +18,7 @@ export const CategoryContent = styled.div`
 `;
 
 export const CategoryH1 = styled.h1`
-  color: #fff;
+  color: black;
   font-size: 32px;
   /* text-align: center; */
   @media screen and (max-width: 768px) {
