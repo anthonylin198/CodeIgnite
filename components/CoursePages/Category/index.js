@@ -8,18 +8,16 @@ import {
 } from "./CategoryElements";
 
 import Card from "../Card";
-const Category = () => {
+const Category = ({ title, cardsArray }) => {
+  const cards = cardsArray.map((number, i) => {
+    return <Card key={i} />;
+  });
+  console.log(cards);
   return (
     <CategoryContainer>
       <CategoryContent>
-        <CategoryH1>Overview</CategoryH1>
-        <CardsContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </CardsContainer>
+        <CategoryH1>{title}</CategoryH1>
+        <CardsContainer>{cards}</CardsContainer>
       </CategoryContent>
     </CategoryContainer>
   );
