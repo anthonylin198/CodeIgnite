@@ -9,8 +9,8 @@ import {
 
 import Card from "../Card";
 const Category = ({ title, cardsArray }) => {
-  const cards = cardsArray.map((number, i) => {
-    return <Card key={i} />;
+  const cards = cardsArray.map((card, i) => {
+    return <Card key={i} name={card.name} description={card.description} />;
   });
   return (
     <CategoryContainer>

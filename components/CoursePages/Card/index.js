@@ -10,12 +10,12 @@ import {
   Button,
 } from "./CardElements";
 
-const Card = () => {
+const Card = ({ name, description }) => {
   return (
     <CardContainer>
       <ContentContainer>
-        <ContentTitle>Card Title</ContentTitle>
-        <ContentP>This is a paragraph</ContentP>
+        <ContentTitle>{name}</ContentTitle>
+        <ContentP>{description}</ContentP>
       </ContentContainer>
       <ButtonContainer>
         <Progress>This is progress</Progress>
