@@ -12,7 +12,6 @@ const Category = ({ title, cardsArray }) => {
   const cards = cardsArray.map((number, i) => {
     return <Card key={i} />;
   });
-  console.log(cards);
   return (
     <CategoryContainer>
       <CategoryContent>

@@ -16,6 +16,9 @@ export const javascriptfundamentals = {
     { name: "second", description: "this is description" },
     { name: "second", description: "this is description" },
     { name: "second", description: "this is description" },
+    { name: "second", description: "this is description" },
+    { name: "second", description: "this is description" },
+    { name: "second", description: "this is description" },
   ],
 };
 
