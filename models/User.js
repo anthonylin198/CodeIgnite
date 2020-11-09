@@ -10,11 +10,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  description: {
-    type: String,
-  },
   progress: [],
-
   date: {
     type: Date,
     default: Date.now,
