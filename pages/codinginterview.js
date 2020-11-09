@@ -7,6 +7,8 @@ import {
   homeObjOne,
   homeObjTwo,
 } from "../components/LandingPages/InfoSection/Data";
+import Soon from "../components/LandingPages/ComingSoon";
+import Footer from "../components/LandingPages/Footer";
 const codinginterview = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,6 +20,8 @@ const codinginterview = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <InfoSection {...homeObjTwo} />
+      <Soon />
+      <Footer />
     </div>
   );
 };

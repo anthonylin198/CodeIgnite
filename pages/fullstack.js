@@ -14,6 +14,7 @@ import {
   homeInfoThree,
 } from "../components/LandingPages/InfoSectionHome/Data";
 import Demo from "../components/LandingPages/Demo";
+import Footer from "../components/LandingPages/Footer";
 
 const fullstack = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ const fullstack = () => {
       {/* <InfoSectionHome {...homeInfoTwo} /> */}
       {/* <InfoSectionHome {...homeInfoThree} /> */}
       <Demo />
+      <Footer />
     </div>
   );
 };
