@@ -1,4 +1,6 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { userReducer } from "../../../redux/reducers/user";
 
 import {
   InfoContainer,
@@ -33,6 +35,11 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
+  const items = useSelector((state) => state);
+  console.log(items);
+  const { testReducer } = userReducer.actions;
+  console.log(testReducer);
+  const dispatch = useDispatch();
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -54,6 +61,7 @@ const InfoSection = ({
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
+                    onClick={() => dispatch(testReducer())}
                   >
                     {buttonLabel}
                   </Button>
