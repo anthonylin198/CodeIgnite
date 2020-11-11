@@ -35,10 +35,10 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
-  const items = useSelector((state) => state);
+  // redux stuff
+  const items = useSelector((state) => state.user.value);
   console.log(items);
   const { testReducer } = userReducer.actions;
-  console.log(testReducer);
   const dispatch = useDispatch();
   return (
     <>
