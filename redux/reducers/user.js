@@ -3,11 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export const userReducer = createSlice({
   name: "counter",
   initialState: {
-    value: [],
+    value: {},
+    isAuthenticated: false,
   },
   reducers: {
     testReducer: (state) => {
-      state.value.push("hello");
+      state.value["test"] = 1;
     },
+    // create action that changes isAuthenticated to true
   },
 });
