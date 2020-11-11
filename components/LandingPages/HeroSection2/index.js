@@ -37,7 +37,7 @@ const InfoSection = ({
 }) => {
   // redux stuff
   const items = useSelector((state) => state.user.value);
-  console.log(items);
+  // console.log(items);
   const { testReducer } = userReducer.actions;
   const dispatch = useDispatch();
   return (
