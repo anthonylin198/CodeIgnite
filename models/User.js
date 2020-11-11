@@ -6,11 +6,18 @@ const UserSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     require: true,
   },
-  progress: [],
+  progress: {},
+  isAuthenticated: {
+    type: Boolean,
+  },
   date: {
     type: Date,
     default: Date.now,

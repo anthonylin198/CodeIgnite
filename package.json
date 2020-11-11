@@ -12,6 +12,8 @@
     "@svgr/webpack": "^5.4.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-styled-components": "^1.11.1",
+    "bcrypt": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.9",
     "next": "9.5.5",
     "next-images": "^1.6.0",
