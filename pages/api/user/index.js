@@ -9,14 +9,6 @@ export default async (req, res) => {
   const { method } = req;
 
   switch (method) {
-    case "GET":
-      try {
-        const notes = await Problem.find({}); // finds all notes in db
-        res.status(200).json({ success: true, data: notes });
-      } catch (error) {
-        res.status(400).json({ success: false });
-      }
-      break;
     case "POST":
       console.log(req.body);
       const { name, email, password } = req.body;
