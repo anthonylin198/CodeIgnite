@@ -24,11 +24,9 @@ export default async (req, res) => {
         }
         // Verify Token
         const decoded = jwt.verify(token, "secret");
-        console.log(decoded);
         req.user = decoded.user;
-        console.log("heerree");
         const user = await User.findById(req.user.id).select("-password"); // req.user is set in the auth.js middleware
-        res.json(user);
+        res.status(200).json(user);
       } catch (error) {
         res.status(400).json({ success: false, msg: "Token not valid" });
       }
