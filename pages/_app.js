@@ -33,7 +33,11 @@ import "../assets/fonts/fontawesome-5/css/all.css";
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
-      <Component {...pageProps} />
+      <GlobalProvider>
+        <Layout pageContext={{}}>
+          <Component {...pageProps} />
+        </Layout>
+      </GlobalProvider>
     </Provider>
   );
 }

@@ -27,8 +27,8 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      {/* <Navbar toggle={toggle} /> */}
       {/* Hero Section */}
       <HeroSection2 {...splash} />
       {/* <Services /> */}
