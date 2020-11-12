@@ -1,4 +1,4 @@
-import dbConnect from "../../../utils/dbConnect";
+import dbConnect from "../../../dbutils/dbConnect";
 import Problem from "../../../models/Problem";
 
 dbConnect();

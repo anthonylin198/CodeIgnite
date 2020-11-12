@@ -1,5 +1,5 @@
 // todo: User login and get user by the JWT token
-import dbConnect from "../../../utils/dbConnect";
+import dbConnect from "../../../dbutils/dbConnect";
 import User from "../../../models/User";
 // import bcrypt, jwt, etc...
 import bcrypt from "bcrypt";
