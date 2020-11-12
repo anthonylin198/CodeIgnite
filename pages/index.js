@@ -20,6 +20,7 @@ import {
 import Footer from "../components/LandingPages/Footer";
 
 // todo: New
+import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/landing/Hero";
 import Content from "../sections/landing/Content";
 import Features from "../sections/landing/Features";
@@ -33,25 +34,27 @@ export default function Home() {
 
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
-      {/* <Navbar toggle={toggle} /> */}
-      {/* Hero Section */}
-      <Hero />
-      <Features />
-      <Content />
+      <PageWrapper headerDark footerDark>
+        {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+        {/* <Navbar toggle={toggle} /> */}
+        {/* Hero Section */}
+        <Hero />
+        <Features />
+        <Content />
 
-      {/* <HeroSection2 {...splash} /> */}
-      {/* <Services /> */}
-      {/* <InfoSectionHome {...homeInfoOne} /> */}
-      {/* <InfoSectionHome {...homeInfoTwo} /> */}
-      {/* <PricingSection /> */}
+        {/* <HeroSection2 {...splash} /> */}
+        {/* <Services /> */}
+        {/* <InfoSectionHome {...homeInfoOne} /> */}
+        {/* <InfoSectionHome {...homeInfoTwo} /> */}
+        {/* <PricingSection /> */}
 
-      {/* <InfoSectionHome {...homeInfoThree} /> */}
-      {/* <InfoSection {...homeObjOne} /> */}
-      {/* About Section */}
-      {/* <InfoSection {...homeObjOne} /> */}
-      {/* <InfoSection {...homeObjTwo} /> */}
-      {/* <Footer /> */}
+        {/* <InfoSectionHome {...homeInfoThree} /> */}
+        {/* <InfoSection {...homeObjOne} /> */}
+        {/* About Section */}
+        {/* <InfoSection {...homeObjOne} /> */}
+        {/* <InfoSection {...homeObjTwo} /> */}
+        {/* <Footer /> */}
+      </PageWrapper>
     </>
   );
 }

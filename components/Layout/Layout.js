@@ -57,7 +57,7 @@ const Layout = ({ children, pageContext }) => {
 
   const [visibleLoader, setVisibleLoader] = useState(true);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     AOS.init();
     setVisibleLoader(false);
   }, []);

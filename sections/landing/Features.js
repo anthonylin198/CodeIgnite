@@ -57,9 +57,9 @@ const Feature2 = () => (
           <Col lg="9">
             <Box className="text-center" mb={[4, 5]}>
               <Title>
-                It’s everything
-                <br />
-                you’ll ever need.
+                Why Codeignite
+                {/* <br />
+                you’ll ever need. */}
               </Title>
             </Box>
           </Col>
@@ -75,7 +75,7 @@ const Feature2 = () => (
             data-aos-delay="50"
           >
             <ContentCard
-              title="50+ Unique Design Blocks"
+              title="Integrated Coding Environment"
               color="primary"
               iconName="icon-cards-2"
             />
@@ -90,7 +90,7 @@ const Feature2 = () => (
             data-aos-delay="50"
           >
             <ContentCard
-              title="Multiple Layouts"
+              title="Learn Modern Technologies"
               color="ash"
               iconName="icon-layout-11"
             />
@@ -105,7 +105,7 @@ const Feature2 = () => (
             data-aos-delay="50"
           >
             <ContentCard
-              title="Mobile First Design"
+              title="Build Real PRojects"
               color="warning"
               iconName="icon-phone-charging-3-2"
             />
