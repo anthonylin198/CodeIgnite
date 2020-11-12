@@ -18,6 +18,12 @@ import {
   homeObjTwo,
 } from "../components/LandingPages/InfoSection/Data";
 import Footer from "../components/LandingPages/Footer";
+
+// todo: New
+import Hero from "../sections/landing/Hero";
+import Content from "../sections/landing/Content";
+import Features from "../sections/landing/Features";
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,18 +36,22 @@ export default function Home() {
       {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       {/* <Navbar toggle={toggle} /> */}
       {/* Hero Section */}
-      <HeroSection2 {...splash} />
+      <Hero />
+      <Features />
+      <Content />
+
+      {/* <HeroSection2 {...splash} /> */}
       {/* <Services /> */}
       {/* <InfoSectionHome {...homeInfoOne} /> */}
       {/* <InfoSectionHome {...homeInfoTwo} /> */}
-      <PricingSection />
+      {/* <PricingSection /> */}
 
       {/* <InfoSectionHome {...homeInfoThree} /> */}
       {/* <InfoSection {...homeObjOne} /> */}
       {/* About Section */}
       {/* <InfoSection {...homeObjOne} /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
