@@ -39,8 +39,8 @@ export default function Home() {
         {/* <Navbar toggle={toggle} /> */}
         {/* Hero Section */}
         <Hero />
-        <Features />
-        {/* <Content /> */}
+        <Content />
+        {/* <Features /> */}
 
         {/* <HeroSection2 {...splash} /> */}
         {/* <Services /> */}
