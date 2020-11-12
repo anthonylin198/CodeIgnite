@@ -1,7 +1,7 @@
 export const menuItems = [
   {
-    name: "demos",
-    label: "Demos",
+    name: "Courses",
+    label: "Courses",
     items: [
       { name: "", label: "Landing 01" },
       { name: "landing-2", label: "Landing 02" },
@@ -95,8 +95,8 @@ export const menuItems = [
     ],
   },
   {
-    name: "https://uxtheme.net/product-support/",
-    label: "Support",
+    name: "About Us",
+    label: "About Us",
     isExternal: true,
   },
 ];
