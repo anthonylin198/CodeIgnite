@@ -24,8 +24,8 @@ const fullstack = () => {
   };
   return (
     <div>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      {/* <Navbar toggle={toggle} /> */}
       <InfoSection {...homeObjOne} />
       {/* <Features /> */}
       {/* <InfoSectionHome {...homeInfoOne} /> */}

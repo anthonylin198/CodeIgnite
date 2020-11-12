@@ -3,14 +3,8 @@ export const menuItems = [
     name: "Courses",
     label: "Courses",
     items: [
-      { name: "", label: "Landing 01" },
-      { name: "landing-2", label: "Landing 02" },
-      { name: "landing-3", label: "Landing 03" },
-      { name: "landing-4", label: "Landing 04" },
-      { name: "landing-5", label: "Landing 05" },
-      { name: "landing-6", label: "Landing 06" },
-      { name: "landing-7", label: "Landing 07" },
-      { name: "landing-8", label: "Landing 08" },
+      { name: "fullstack", label: "Full-Stack Course" },
+      { name: "codinginterview", label: "Coding Interview Pro" },
     ],
   },
   {

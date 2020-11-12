@@ -8,8 +8,8 @@ import GlobalContext from "../../context/GlobalContext";
 
 import { device } from "../../utils";
 import svgHeroShape from "../../assets/image/svg/hero-shape-svg.svg";
-import imgL1HeroPhone from "../../assets/image/png/landing1-hero-phone.png";
-// import imgL1HeroPhone from "../../assets/image/png/blog-post-list--img.png";
+// import imgL1HeroPhone from "../../assets/image/png/landing1-hero-phone.png";
+import imgL1HeroPhone from "../../assets/image/png/content-img1--mobile.png";
 
 const ShapeTopLeft = styled.div`
   position: absolute;
@@ -113,7 +113,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="light" fontSize={2} lineHeight="1.25">
-                    You have successfully logged in
+                    Integrated Coding Environment
                   </Text>
                 </TopCard>
 
@@ -141,7 +141,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="dark" fontSize={2} lineHeight="1.25">
-                    Appointment with the doctor was successful. Move to next!
+                    Check Your answers Live
                   </Text>
                 </BottomCard>
               </div>
@@ -154,16 +154,13 @@ const Hero = () => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
-                  <Title variant="hero">
-                    Redesigned, how you build landing page!
-                  </Title>
+                  <Title variant="hero">Remote Coding Courses</Title>
                   <Text mb={4}>
-                    Create custom landing pages with Omega that convert more
-                    visitors than any website. With lots of unique blocks, you
-                    can easily build a page without coding.
+                    Our computer science programs set students up to become
+                    autonomous engineers with college level portfolios
                   </Text>
                   <div className="d-flex flex-column align-items-start">
-                    <Button mb={3}>Get Started</Button>
+                    <Button mb={3}>Learn More</Button>
                     <a
                       href="/"
                       className="text-decoration-none"

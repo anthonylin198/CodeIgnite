@@ -34,13 +34,13 @@ export default function Home() {
 
   return (
     <>
-      <PageWrapper headerDark footerDark>
+      <PageWrapper footerDark>
         {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
         {/* <Navbar toggle={toggle} /> */}
         {/* Hero Section */}
         <Hero />
         <Features />
-        <Content />
+        {/* <Content /> */}
 
         {/* <HeroSection2 {...splash} /> */}
         {/* <Services /> */}

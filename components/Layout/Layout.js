@@ -70,7 +70,7 @@ const Layout = ({ children, pageContext }) => {
       "popstate",
       function (event) {
         // The popstate event is fired each time when the current history entry changes.
-        gContext.closeAbout();
+        // gContext.closeAbout();
         gContext.closeContact();
         gContext.closeOffcanvas();
       },
