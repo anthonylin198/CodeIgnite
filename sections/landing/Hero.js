@@ -168,6 +168,7 @@ const Hero = () => {
                     Our computer science programs set students up to become
                     autonomous engineers with college level portfolios
                   </Text>
+
                   <div className="d-flex flex-column align-items-start">
                     <ScrollButton
                       to="feature"

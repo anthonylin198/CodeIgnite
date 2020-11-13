@@ -87,12 +87,12 @@ const PostCard = ({
       <Box className="position-relative">
         <Link href={linkTitle}>
           <a className="w-100  d-flex">
-            <img src={img} alt="" className="w-100 img-fluid" />
-            {imgBrand && (
+            {/* <img src={img} alt="" className="w-100 img-fluid" /> */}
+            {/* {imgBrand && (
               <BrandImage>
                 <img src={imgBrand} alt="" className="img-fluid" />
               </BrandImage>
-            )}
+            )} */}
           </a>
         </Link>
       </Box>

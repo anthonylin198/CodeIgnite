@@ -42,6 +42,7 @@ const CaseList = () => (
               Start from the fundamentals of Javascript to building full-stack
               applications
               <br></br>
+              <br></br>
               <Button linkTo="fullstack">Learn More</Button>
             </PostCard>
           </Col>
@@ -54,6 +55,7 @@ const CaseList = () => (
             >
               Learn the key concepts necessary to pass the dreaded coding
               interview
+              <br></br>
               <br></br>
               <Button linkTo="codinginterview">Learn More</Button>
             </PostCard>
