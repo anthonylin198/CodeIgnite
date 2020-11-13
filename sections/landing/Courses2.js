@@ -43,7 +43,7 @@ const CaseList = () => (
               applications
               <br></br>
               <ButtonContainer>
-                <Button>Learn More</Button>
+                <Button linkTo="fullstack">Learn More</Button>
               </ButtonContainer>
             </PostCard>
           </Col>
@@ -58,7 +58,7 @@ const CaseList = () => (
               interview
               <br></br>
               <ButtonContainer>
-                <Button>Learn More</Button>
+                <Button linkTo="codinginterview">Learn More</Button>
               </ButtonContainer>
             </PostCard>
           </Col>

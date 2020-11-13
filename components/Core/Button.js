@@ -10,8 +10,10 @@ import {
   flexbox,
   layout,
 } from "styled-system";
+import Link from "next/link";
 
 const ButtonSolid = styled.a`
+  cursor: pointer;
   padding: 0.85rem 1.75rem;
   /* min-width: 200px; */
   border-radius: 5px;
@@ -61,8 +63,8 @@ const ButtonSolid = styled.a`
 
 const ButtonOutline = styled(ButtonSolid)`
   background: transparent;
-  /* border: 1px solid ${({ theme, color }) => theme.colors[color]}; */
-  /* color: ${({ theme, color }) => theme.colors[color]}; */
+  border: 1px solid ${({ theme, color }) => theme.colors[color]};
+  color: ${({ theme, color }) => theme.colors[color]};
 
   &:before {
     background: ${({ theme, color }) => theme.colors[color]};
@@ -86,24 +88,29 @@ const Button = ({
   variant = "solid",
   color = "light",
   bg = "primary",
+  linkTo = "",
   ...rest
 }) => {
   return variant === "solid" ? (
-    <ButtonSolid
-      color={color}
-      border={`1px solid`}
-      borderColor={bg}
-      bg={bg}
-      {...rest}
-    />
+    <Link href={linkTo}>
+      <ButtonSolid
+        color={color}
+        border={`1px solid`}
+        borderColor={bg}
+        bg={bg}
+        {...rest}
+      />
+    </Link>
   ) : (
-    <ButtonOutline
-      color={color}
-      bg={bg}
-      border={`1px solid`}
-      borderColor={color}
-      {...rest}
-    />
+    <Link href={linkTo}>
+      <ButtonOutline
+        color={color}
+        bg={bg}
+        border={`1px solid`}
+        borderColor={color}
+        {...rest}
+      />
+    </Link>
   );
 };
 
