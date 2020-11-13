@@ -100,9 +100,7 @@ const SignIn = () => {
                         <Checkbox>Keep me signed in</Checkbox>
                       </Box>
 
-                      <Button width="100%" type="submit" borderRadius={10}>
-                        Get Started
-                      </Button>
+                      <Button>Get Started</Button>
                       <Box mt={3}>
                         No account?{" "}
                         <Link href="/signup">

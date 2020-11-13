@@ -82,9 +82,7 @@ const SignUp = () => {
                         </Checkbox>
                       </Box> */}
 
-                      <Button width="100%" type="submit" borderRadius={10}>
-                        Get Started
-                      </Button>
+                      <Button>Get Started</Button>
                       <Box mt={3}>
                         Already have an account?{" "}
                         <Link href="/signin">
