@@ -8,9 +8,19 @@ import {
 } from "./CategoryElements";
 
 import Card from "../Card";
+import ModuleCard from "../../ModuleCard";
 const Category = ({ title, cardsArray }) => {
   const cards = cardsArray.map((card, i) => {
-    return <Card key={i} name={card.name} description={card.description} />;
+    return (
+      <ModuleCard
+        linkTitle=""
+        preTitle={card.name}
+        title={card.title}
+        key={i}
+        name={card.name}
+        description={card.description}
+      />
+    );
   });
   return (
     <CategoryContainer>

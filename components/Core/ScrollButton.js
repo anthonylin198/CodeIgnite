@@ -94,8 +94,8 @@ const ScrollButton = ({
   return variant === "solid" ? (
     <ButtonSolid
       color={color}
-      border={`1px solid`}
-      borderColor={bg}
+      // border={`1px solid`}
+      // borderColor={bg}
       bg={bg}
       {...rest}
     />
@@ -103,8 +103,8 @@ const ScrollButton = ({
     <ButtonOutline
       color={color}
       bg={bg}
-      border={`1px solid`}
-      borderColor={color}
+      // border={`1px solid`}
+      // borderColor={color}
       {...rest}
     />
   );

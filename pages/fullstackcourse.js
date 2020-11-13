@@ -5,6 +5,7 @@ import Progress from "../components/CoursePages/Progress";
 import Category from "../components/CoursePages/Category";
 import NavBar from "../components/LandingPages/Navbar";
 import HeroCenter from "../sections/common/HeroCenter";
+import ModuleCard from "../components/ModuleCard";
 import {
   overview,
   javascriptfundamentals,
