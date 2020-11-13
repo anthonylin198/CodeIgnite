@@ -25,6 +25,7 @@ import Hero from "../sections/landing/Hero";
 import Content from "../sections/landing/Content";
 import Courses from "../sections/landing/Courses";
 import Features from "../sections/landing/Features";
+import Skeleton from "react-loading-skeleton";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
