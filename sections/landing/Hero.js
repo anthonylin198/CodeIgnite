@@ -180,7 +180,7 @@ const Hero = () => {
                     >
                       Learn More
                     </ScrollButton>
-                    <a
+                    {/* <a
                       href="/"
                       className="text-decoration-none"
                       onClick={openVideoModal}
@@ -189,7 +189,7 @@ const Hero = () => {
                         <i className="icon icon-triangle-right-17-2"></i> Watch
                         the intro video
                       </Box>
-                    </a>
+                    </a> */}
                   </div>
                 </Box>
               </div>

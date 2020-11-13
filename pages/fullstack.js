@@ -31,15 +31,15 @@ const fullstack = () => {
   };
   return (
     <>
-      <PageWrapper>
+      <PageWrapper footerDark>
         <Hero title="Full-Stack Course">
           Create custom landing pages with Omega that converts more visitors
           than any website.
         </Hero>
         <Features3 />
         <CTA />
-        <Feature />
-        <Feature2 />
+        {/* <Feature /> */}
+        {/* <Feature2 /> */}
 
         {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
         {/* <Navbar toggle={toggle} /> */}
@@ -50,7 +50,7 @@ const fullstack = () => {
         {/* <InfoSectionHome {...homeInfoThree} /> */}
         {/* <Demo /> */}
         {/* <Footer /> */}
-        <CTA />
+        {/* <CTA /> */}
       </PageWrapper>
     </>
   );

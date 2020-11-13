@@ -28,12 +28,7 @@ import Features from "../sections/landing/Features";
 import Skeleton from "react-loading-skeleton";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
+  // create functionality for redux to get user information
   return (
     <>
       {/* we could put footer dark to make dark */}

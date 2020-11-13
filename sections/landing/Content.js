@@ -66,9 +66,10 @@ const Feature = () => (
             <Box>
               <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.7}>
-                Our curriculum starts from introducducing student to core
-                programming concepts, to turning those skills scalable software
-                solution to solve real world problems.
+                Our curriculum begins by building a strong foundation of core
+                programming concepts, to turning those skills and mindset
+                towards building scalable software solutions to solve real world
+                problems.
               </Text>
               <ScrollButton
                 to="courses"
@@ -96,10 +97,9 @@ const Feature = () => (
                   <FeatureCard
                     color="primary"
                     iconName="icon-layout-11"
-                    title="Great Curriculum"
+                    title="Innovative Curriculum"
                   >
-                    With lots of unique blocks, you can easily build a page
-                    without coding.
+                    Integrated learning environment to get the most out of it
                   </FeatureCard>
                 </Col>
                 <Col
@@ -113,10 +113,10 @@ const Feature = () => (
                   <FeatureCard
                     color="ash"
                     iconName="icon-sidebar-2"
-                    title="Helpful 2"
+                    title="Awesome Community"
                   >
-                    With lots of unique blocks, you can easily build a page
-                    without coding.
+                    Learn and connect with likeminded individuals to build
+                    innovative prouducts
                   </FeatureCard>
                 </Col>
                 <Col
@@ -132,8 +132,8 @@ const Feature = () => (
                     iconName="icon-voice-recognition-2"
                     title="College Level Portfolio"
                   >
-                    Students will have the ability to build production level
-                    project
+                    Students will have a college level portfolio of projects
+                    leading up to a production project
                   </FeatureCard>
                 </Col>
               </Row>

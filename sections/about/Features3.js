@@ -81,14 +81,14 @@ const Features3 = () => (
         <Row className="align-items-center">
           <Col lg="6" className="pl-lg-5 order-lg-2">
             <div className="feature-content section-title">
-              <Title color="light">Build a perfect landing page.</Title>
+              <Title color="light">Creating Future Leaders with Code.</Title>
               <Text color="light" opacity={0.7} mb={4}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
+                Start from computer science fundamentals to learning the skills
+                necessary to launch full scale applications with the same
+                technologies utilized by top companies
               </Text>
 
-              <Button variant="outline">Check all features</Button>
+              {/* <Button variant="outline">Check all features</Button> */}
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
@@ -97,40 +97,40 @@ const Features3 = () => (
                 <FeatureCard
                   color="primary"
                   iconName="icon-layout-11"
-                  title="Multiple Layouts"
+                  title="Computer Science Fundamentals"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Build a computer science foundation with Javascript content
+                  and exercises
                 </FeatureCard>
               </Col>
               <Col md="6">
                 <FeatureCard
                   color="warning"
                   iconName="icon-sidebar-2"
-                  title="Fully Responsive"
+                  title="Front-End Web"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Learn the foundations of front-end web development to build
+                  beautiful interfaces with modern frameworks
                 </FeatureCard>
               </Col>
               <Col md="6">
                 <FeatureCard
                   color="secondary"
                   iconName="icon-bookmark-2-2"
-                  title="Well Documented"
+                  title="Back-End"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Learn about servers and databases and how to integrate them
+                  into you application with Nodes.js
                 </FeatureCard>
               </Col>
               <Col md="6">
                 <FeatureCard
                   color="ash"
                   iconName="icon-chat-45-2"
-                  title="Great Support"
+                  title="Production Ready"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Build a full stack production ready application as an
+                  individual or team up with other CodeIgnite members
                 </FeatureCard>
               </Col>
             </Row>
