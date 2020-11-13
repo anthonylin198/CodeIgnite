@@ -13,7 +13,7 @@ import {
 
 const ButtonSolid = styled.a`
   padding: 0.85rem 1.75rem;
-  min-width: 200px;
+  /* min-width: 200px; */
   border-radius: 5px;
   font-size: 21px;
   font-weight: 500;
