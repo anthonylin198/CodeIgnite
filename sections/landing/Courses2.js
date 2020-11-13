@@ -28,6 +28,7 @@ const CaseList = () => (
               img={imgCase1}
               // imgBrand={imgBrand1}
               title="Full- Stack Course"
+              linkTitle="fullstack"
             >
               Start from the fundamentals of Javascript to building full-stack
               applications
@@ -38,6 +39,7 @@ const CaseList = () => (
               img={imgCase2}
               // imgBrand={imgBrand2}
               title="Coding Interview Course"
+              linkTitle="codinginterview"
             >
               Learn the key concepts necessary to pass the dreaded coding
               interview

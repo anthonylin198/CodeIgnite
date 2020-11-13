@@ -17,8 +17,8 @@ const codinginterview = () => {
   };
   return (
     <div>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} /> */}
       <InfoSection {...homeObjTwo} />
       <Soon />
       <Footer />

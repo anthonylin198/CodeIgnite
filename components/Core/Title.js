@@ -29,7 +29,7 @@ const SectionTitle = styled.h2`
 
 const HeroTitle = styled(SectionTitle)`
   letter-spacing: -2.81px;
-  font-size: 50px;
+  font-size: 47px;
   line-height: 56px;
   margin-bottom: 30px;
 
