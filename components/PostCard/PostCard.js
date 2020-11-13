@@ -19,6 +19,7 @@ const ImageContainerHorizontal = styled(Box)`
   overflow: hidden;
   position: relative;
   width: 100%;
+  max-height: 500px;
 
   @media ${device.md} {
     width: 100%;
