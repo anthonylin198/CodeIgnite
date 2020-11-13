@@ -7,8 +7,7 @@ import {
   CardsContainer,
 } from "./CategoryElements";
 
-import Card from "../Card";
-import ModuleCard from "../../ModuleCard";
+import ModuleCard from "../../../components/ModuleCard";
 const Category = ({ title, cardsArray }) => {
   const cards = cardsArray.map((card, i) => {
     return (

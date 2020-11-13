@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Category from "../components/CoursePages/Category";
+import Category from "../sections/portal/Category";
 import HeroCenter from "../sections/common/HeroCenter";
 import {
   overview,
@@ -10,7 +10,7 @@ import {
   backendGuide,
   projectPhase,
   productionPhase,
-} from "../components/CoursePages/Category/Data";
+} from "../sections/portal/Category/Data";
 const fullstackcourse = () => {
   const [isOpen, setIsOpen] = useState(false);
 
