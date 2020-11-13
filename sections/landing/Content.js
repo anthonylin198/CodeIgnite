@@ -50,7 +50,7 @@ const FeatureCard = ({
 
 const Feature = () => (
   <>
-    <Section bg="ash">
+    <Section id="feature" bg="ash">
       <Container>
         <Row className="align-items-center">
           <Col

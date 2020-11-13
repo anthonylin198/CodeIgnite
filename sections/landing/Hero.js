@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
+import ScrollButton from "../../components/Core/ScrollButton";
 
 import GlobalContext from "../../context/GlobalContext";
 
@@ -168,7 +169,17 @@ const Hero = () => {
                     autonomous engineers with college level portfolios
                   </Text>
                   <div className="d-flex flex-column align-items-start">
-                    <Button mb={3}>Learn More</Button>
+                    <ScrollButton
+                      to="feature"
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      mb={3}
+                    >
+                      Learn More
+                    </ScrollButton>
                     <a
                       href="/"
                       className="text-decoration-none"
