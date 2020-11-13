@@ -168,7 +168,7 @@ const CaseStudies = () => {
             <Row className="justify-content-center">
               <Title variant="hero">Our Featured Courses</Title>
               <Col
-                lg="6"
+                lg="5"
                 md="9"
                 className="mb-4"
                 data-aos="fade-up"
@@ -186,7 +186,7 @@ const CaseStudies = () => {
                 </CaseCard>
               </Col>
               <Col
-                lg="6"
+                lg="5"
                 md="9"
                 className="mb-4"
                 data-aos="fade-up"

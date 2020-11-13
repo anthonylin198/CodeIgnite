@@ -70,7 +70,7 @@ const Footer = ({ isDark = true }) => {
       {/* <!-- Footer section --> */}
       <Box bg={isDark ? "dark" : "light"}>
         <Container>
-          <Box
+          {/* <Box
             css={`
               padding: 80px 0 60px;
             `}
@@ -187,11 +187,11 @@ const Footer = ({ isDark = true }) => {
                 </Row>
               </Col>
             </Row>
-          </Box>
+          </Box> */}
           <CopyRightArea dark={isDark ? 1 : 0}>
             <Row className="align-items-center">
               <Col sm="6" className="text-sm-left text-center mb-2 mb-sm-0">
-                <p>&copy; 2019 UXTheme, All Rights Reserved</p>
+                <p>&copy; 2020 CodeIgnite, All Rights Reserved</p>
               </Col>
               <Col sm="6" className="text-sm-right text-center">
                 <ul className="social-icons">
