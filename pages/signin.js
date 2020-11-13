@@ -54,7 +54,7 @@ const SignIn = () => {
               <Row className="justify-content-center">
                 <Col lg="7" xl="6">
                   <Box className="text-center" pt="40px">
-                    <Logo />
+                    {/* <Logo /> */}
                   </Box>
                 </Col>
               </Row>

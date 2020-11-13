@@ -36,6 +36,13 @@ const SiteHeader = styled.header`
   }
 `;
 
+// create a div that will only popup on mobiel
+const MobileLogin = styled.a`
+  @media ${device.md} {
+    display: none;
+  }
+`;
+
 const ToggleButton = styled.button`
   color: ${({ dark, theme }) =>
     dark ? theme.colors.lightShade : theme.colors.darkShade}!important;
@@ -216,11 +223,15 @@ const Header = ({ isDark = false }) => {
       >
         <Container fluid>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
+            <Link href="signin">
+              <MobileLogin>Login</MobileLogin>
+            </Link>
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
               <Logo white={isDark} />
-              {/* CodeIgnite */}
             </div>
+
+            {/* Insert login here */}
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">
                 <Menu
