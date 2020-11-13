@@ -4,6 +4,7 @@ import Title from "../components/CoursePages/Title";
 import Progress from "../components/CoursePages/Progress";
 import Category from "../components/CoursePages/Category";
 import NavBar from "../components/LandingPages/Navbar";
+import HeroCenter from "../sections/common/HeroCenter";
 import {
   overview,
   javascriptfundamentals,
@@ -22,8 +23,11 @@ const fullstackcourse = () => {
   return (
     <div>
       {/* <NavBar toggle={toggle} /> */}
-      <Title />
-      <Progress />
+      <HeroCenter title="Full-Stack Course">
+        Modern Full Stack Web Development
+      </HeroCenter>
+      {/* <Title /> */}
+      {/* <Progress /> */}
       <Category {...overview} />
       <Category {...javascriptfundamentals} />
       <Category {...webDevelopmentFundamentals} />
