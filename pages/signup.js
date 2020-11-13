@@ -32,6 +32,7 @@ const FormStyled = styled.form`
 `;
 
 const AForgot = styled.a`
+  cursor: pointer;
   color: ${({ theme }) => theme.colors.secondary} !important;
   text-decoration: none !important;
 `;
@@ -63,11 +64,12 @@ const SignUp = () => {
                         {/* <Text>No credit card required</Text> */}
                       </div>
                       <Box mb={3}>
-                        <Input type="email" placeholder="Email address" />
-                      </Box>
-                      <Box mb={3}>
                         <Input type="text" placeholder="Full Name" />
                       </Box>
+                      <Box mb={3}>
+                        <Input type="email" placeholder="Email address" />
+                      </Box>
+
                       <Box mb={4} className="position-relative">
                         <Input type="password" placeholder="Password" />
                       </Box>

@@ -33,9 +33,20 @@ const FormStyled = styled.form`
 `;
 
 const AForgot = styled.a`
-  /* position: absolute; */
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: ${({ theme }) => theme.colors.secondary} !important;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-decoration: none !important;
+`;
+
+const ASignup = styled.a`
+  cursor: pointer;
   right: 15px;
   color: ${({ theme }) => theme.colors.secondary} !important;
   font-size: 16px;
@@ -96,7 +107,7 @@ const SignIn = () => {
                         No account?{" "}
                         <Link href="/signup">
                           {/* <a>Signup</a> */}
-                          <AForgot>Signup</AForgot>
+                          <ASignup>Signup</ASignup>
                         </Link>
                       </Box>
                     </FormStyled>
