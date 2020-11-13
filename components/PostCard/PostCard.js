@@ -87,7 +87,7 @@ const PostCard = ({
       <Box className="position-relative">
         <Link href={linkTitle}>
           <a className="w-100 h-100 d-flex">
-            <img src={img} alt="" className="w-100 img-fluid" />
+            <img src={img} alt="" className="w-100 " />
             {imgBrand && (
               <BrandImage>
                 <img src={imgBrand} alt="" className="img-fluid" />
