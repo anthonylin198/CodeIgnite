@@ -32,6 +32,14 @@ const TopCard = styled(Box)`
   }
 `;
 
+// create a column that won't appear on mobile
+const ColRight = styled(Col)`
+  display: none;
+  @media ${device.sm} {
+    display: inline;
+  }
+`;
+
 const BottomCard = styled(Box)`
   width: 305px;
   box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.shadow}`};
@@ -77,7 +85,7 @@ const Hero = () => {
         </ShapeTopLeft>
         <Container>
           <Row className="justify-content-center align-items-center">
-            <Col lg="5" md="8" sm="9" className="order-lg-2">
+            <ColRight lg="5" md="8" sm="9" className="order-lg-2">
               <div className="text-center text-lg-right position-relative">
                 <div
                   className="img-main"
@@ -145,7 +153,7 @@ const Hero = () => {
                   </Text>
                 </BottomCard>
               </div>
-            </Col>
+            </ColRight>
             <Col lg="7" className="order-lg-1">
               <div
                 data-aos="fade-right"
