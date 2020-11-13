@@ -36,7 +36,7 @@ const TopCard = styled(Box)`
 // create a column that won't appear on mobile
 const ColRight = styled(Col)`
   display: none;
-  @media ${device.sm} {
+  @media ${device.lg} {
     display: inline;
   }
 `;
@@ -150,7 +150,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="dark" fontSize={2} lineHeight="1.25">
-                    Check Your answers Live
+                    Learn Remote at Your Own Pace
                   </Text>
                 </BottomCard>
               </div>
