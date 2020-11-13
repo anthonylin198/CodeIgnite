@@ -94,7 +94,7 @@ export const menuItems = [
     isExternal: true,
   },
   {
-    name: "CoursePortal",
+    name: "fullstackcourse",
     label: "Course Portal",
     isExternal: true,
   },
