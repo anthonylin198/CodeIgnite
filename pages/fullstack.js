@@ -23,6 +23,8 @@ import Feature2 from "../sections/about/Features";
 import CTA from "../sections/about/CTA";
 import Feature from "../sections/about/Features2";
 import Features3 from "../sections/about/Features3";
+import Feature4 from "../sections/about/Feature4";
+import Content from "../sections/about/Content";
 const fullstack = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,10 +35,11 @@ const fullstack = () => {
     <>
       <PageWrapper footerDark>
         <Hero title="Full-Stack Course">
-          Create custom landing pages with Omega that converts more visitors
-          than any website.
+          Learn modern full-stack software engineering
         </Hero>
         <Features3 />
+        {/* <Content /> */}
+        {/* <Feature4 /> */}
         <CTA />
         {/* <Feature /> */}
         {/* <Feature2 /> */}

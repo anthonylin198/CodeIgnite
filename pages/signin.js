@@ -33,9 +33,9 @@ const FormStyled = styled.form`
 `;
 
 const AForgot = styled.a`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
   right: 15px;
   color: ${({ theme }) => theme.colors.secondary} !important;
   font-size: 16px;
@@ -92,6 +92,13 @@ const SignIn = () => {
                       <Button width="100%" type="submit" borderRadius={10}>
                         Get Started
                       </Button>
+                      <Box mt={3}>
+                        No account?{" "}
+                        <Link href="/signup">
+                          {/* <a>Signup</a> */}
+                          <AForgot>Signup</AForgot>
+                        </Link>
+                      </Box>
                     </FormStyled>
                   </Col>
                 </Row>
