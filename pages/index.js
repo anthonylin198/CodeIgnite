@@ -23,6 +23,7 @@ import Footer from "../components/LandingPages/Footer";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/landing/Hero";
 import Content from "../sections/landing/Content";
+import Courses from "../sections/landing/Courses";
 import Features from "../sections/landing/Features";
 
 export default function Home() {
@@ -34,12 +35,14 @@ export default function Home() {
 
   return (
     <>
+      {/* we could put footer dark to make dark */}
       <PageWrapper footerDark>
         {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
         {/* <Navbar toggle={toggle} /> */}
         {/* Hero Section */}
         <Hero />
         <Content />
+        <Courses />
         {/* <Features /> */}
 
         {/* <HeroSection2 {...splash} /> */}

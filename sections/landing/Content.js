@@ -63,11 +63,11 @@ const Feature = () => (
             data-aos-delay="500"
           >
             <Box>
-              <Title color="light">Become Problem Solvers.</Title>
+              <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.7}>
                 Our curriculum starts from introducducing student to core
-                programming concepts, to turning those skills into problem
-                solvers that can build scalable applications
+                programming concepts, to turning those skills scalable software
+                solution to solve real world problems.
               </Text>
               <Button mt={4}>Get Started</Button>
             </Box>
