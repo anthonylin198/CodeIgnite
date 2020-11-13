@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-import imgL1Logo from "../../assets/image/png/l1-logo.png";
+// import imgL1Logo from "../../assets/image/png/l1-logo.png";
+
+import imgL1Logo from "../../assets/image/png/CodeIgnite.png";
 import imgL1LogoWhite from "../../assets/image/png/logo-white.png";
 
 const Logo = ({ white, height, className = "", ...rest }) => {

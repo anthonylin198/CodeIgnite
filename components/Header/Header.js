@@ -219,6 +219,7 @@ const Header = ({ isDark = false }) => {
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
               <Logo white={isDark} />
+              {/* CodeIgnite */}
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">
