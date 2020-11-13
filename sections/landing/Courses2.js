@@ -28,7 +28,7 @@ const ButtonContainer = styled.div`
 const CaseList = () => (
   <>
     {/* <!-- Feature section --> */}
-    <Section className="position-relative">
+    <Section id="courses" className="position-relative">
       <Container>
         <Row className="align-items-center justify-content-center">
           <NewTitle variant="hero">Our Featured Courses</NewTitle>

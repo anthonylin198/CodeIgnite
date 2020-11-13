@@ -3,6 +3,7 @@ import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
+import ScrollButton from "../../components/Core/ScrollButton";
 
 const FeatureCard = ({
   color = "primary",
@@ -69,7 +70,17 @@ const Feature = () => (
                 programming concepts, to turning those skills scalable software
                 solution to solve real world problems.
               </Text>
-              <Button mt={4}>Get Started</Button>
+              <ScrollButton
+                to="courses"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                mt={4}
+              >
+                Get Started
+              </ScrollButton>
             </Box>
           </Col>
           <Col md="8" lg="5" className="order-lg-1 mt-5 mt-lg-0">

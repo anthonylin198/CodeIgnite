@@ -6,9 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
 
 import PageWrapper from "../components/PageWrapper";
-import { device } from "../utils";
-
 import Logo from "../components/Logo";
+import { device } from "../utils";
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
@@ -33,65 +32,63 @@ const FormStyled = styled.form`
 `;
 
 const AForgot = styled.a`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
   color: ${({ theme }) => theme.colors.secondary} !important;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
   text-decoration: none !important;
 `;
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <>
       <PageWrapper>
         <BoxStyled bg="#f7f8fa">
           <Box>
-            <Container>
+            <Container className="text-center">
               <Row className="justify-content-center">
                 <Col lg="7" xl="6">
-                  <Box className="text-center" pt="40px">
+                  <Box pt="40px" className="text-center">
                     <Logo />
                   </Box>
                 </Col>
               </Row>
             </Container>
           </Box>
-          <BoxInner className="d-flex align-items-center">
+          <BoxInner>
             <Container className="text-center">
-              <Box my="100px" mx="auto">
+              <Box my="150px" mx="auto">
                 <Row className="justify-content-center">
                   <Col lg="7" xl="6">
                     <FormStyled>
                       <div className="mb-5">
-                        <Title className="mb-2">Sign In</Title>
-                        <Text>Enter your account details below</Text>
+                        <Title className="mb-2">Sign Up</Title>
+                        {/* <Text>No credit card required</Text> */}
                       </div>
                       <Box mb={3}>
-                        <Input type="email" placeholder="Email" />
+                        <Input type="email" placeholder="Email address" />
+                      </Box>
+                      <Box mb={3}>
+                        <Input type="text" placeholder="Full Name" />
                       </Box>
                       <Box mb={4} className="position-relative">
-                        <Input
-                          type="password"
-                          placeholder="Password"
-                          css={`
-                            padding-right: 9.25rem;
-                          `}
-                        />
-                        <Link href="/reset-pass">
-                          <AForgot>Forgot Password?</AForgot>
-                        </Link>
+                        <Input type="password" placeholder="Password" />
                       </Box>
-                      <Box mb={3} className="text-left">
-                        <Checkbox>Keep me signed in</Checkbox>
-                      </Box>
+                      {/* <Box mb={3} className="text-left">
+                        <Checkbox>
+                          I agree to the{" "}
+                          <Link href="/">
+                            <AForgot>Terms & Condition</AForgot>
+                          </Link>
+                        </Checkbox>
+                      </Box> */}
 
                       <Button width="100%" type="submit" borderRadius={10}>
                         Get Started
                       </Button>
+                      <Box mt={3}>
+                        Already have an account?{" "}
+                        <Link href="/signin">
+                          <AForgot>Sign in</AForgot>
+                        </Link>
+                      </Box>
                     </FormStyled>
                   </Col>
                 </Row>
@@ -103,4 +100,4 @@ const SignIn = () => {
     </>
   );
 };
-export default SignIn;
+export default SignUp;

@@ -96,6 +96,6 @@ export const menuItems = [
   {
     name: "fullstackcourse",
     label: "Course Portal",
-    isExternal: true,
+    // isExternal: true,
   },
 ];
