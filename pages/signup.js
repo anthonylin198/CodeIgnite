@@ -40,8 +40,7 @@ const SignUp = () => {
     // redirect to home
     Router.push("/");
   }
-  // todo adding functionality
-  const { register, loadUser } = userReducer.actions;
+  const { loadUser } = userReducer.actions;
   const dispatch = useDispatch();
 
   // Setup hook to store all the form data that will be submitted
@@ -64,7 +63,6 @@ const SignUp = () => {
           "Content-Type": "application/json",
         },
       };
-
       const body = JSON.stringify({
         name: formData.name,
         email: formData.email,
