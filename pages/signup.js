@@ -19,6 +19,9 @@ import { userReducer } from "../redux/reducers/user";
 import axios from "axios";
 
 const SignUp = () => {
+  // hooks
+  const { loadUser } = userReducer.actions;
+  const dispatch = useDispatch();
   // Check the user's state
   useEffect(() => {
     const fetchUserData = async () => {
@@ -34,14 +37,12 @@ const SignUp = () => {
     };
     fetchUserData();
   }, []);
+
   // Check if the user is authenticated from the redux store - this will check before the update
   const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
   if (isAuthenticated) {
-    // redirect to home
     Router.push("/");
   }
-  const { loadUser } = userReducer.actions;
-  const dispatch = useDispatch();
 
   // Setup hook to store all the form data that will be submitted
   const [formData, setFormData] = useState({

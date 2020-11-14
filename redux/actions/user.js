@@ -1,48 +1,34 @@
 // dispatch to the reducer here
-import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
-
-//! LOAD USER
-export const loadUser = () => async (dispatch) => {
-  if (localStorage.token) {
-    setAuthToken(localStorage.token);
-  }
-
-  try {
-    const res = await axios.get("/api/auth");
-    dispatch({
-      type: USER_LOADED,
-      payload: res.data,
-    });
-  } catch (err) {
-    dispatch({
-      type: AUTH_ERROR,
-    });
-  }
-};
+import setAuthToken from "../../utils/setAuthToken";
+import { userReducer } from "../reducers/user";
 
 // ! registerring the user
-export const registerAction = async (name, email, password) => {
+export const registerAction = (name, email, password) => async (dispatch) => {
+  const { loadUser } = userReducer.actions;
   const config = {
     headers: {
       "Content-Type": "application/json",
     },
   };
-
-  const body = JSON.stringify({ name, email, password });
-
-  console.log(body);
-
+  const body = JSON.stringify({
+    name,
+    email,
+    password,
+  });
   try {
+    // try registering user to db
     const res = await axios.post("/api/user", body, config);
-    dispatch({
-      type: REGISTER_SUCCESS,
-      payload: res.data,
-    });
-    dispatch(loadUser());
+    // if successful, set the auth token and find the user
+    localStorage.setItem("token", res.data.token);
+    if (localStorage.token) {
+      setAuthToken(localStorage.token); // sets the x-auth headers
+    }
+    const userData = await axios.get("/api/auth");
+    console.log("here", userData);
+    console.log("thisis load", loadUser);
+    dispatch(loadUser(userData.data));
   } catch (err) {
-    dispatch({
-      type: REGISTER_FAIL,
-    });
+    console.log("this is an error");
   }
 };
