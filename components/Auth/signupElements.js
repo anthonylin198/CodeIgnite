@@ -29,3 +29,13 @@ export const AForgot = styled.a`
   color: ${({ theme }) => theme.colors.secondary} !important;
   text-decoration: none !important;
 `;
+
+export const ASignup = styled.a`
+  cursor: pointer;
+  right: 15px;
+  color: ${({ theme }) => theme.colors.secondary} !important;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-decoration: none !important;
+`;

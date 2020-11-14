@@ -22,7 +22,8 @@ const SignUp = () => {
   // hooks
   const { loadUser } = userReducer.actions;
   const dispatch = useDispatch();
-  // Check the user's state
+  const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
+  // Get the logged in user's data
   useEffect(() => {
     const fetchUserData = async () => {
       if (localStorage.token) {
@@ -39,7 +40,6 @@ const SignUp = () => {
   }, []);
 
   // Check if the user is authenticated from the redux store - this will check before the update
-  const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
   if (isAuthenticated) {
     Router.push("/");
   }

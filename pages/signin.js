@@ -1,63 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-
 import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
+import {
+  BoxStyled,
+  BoxInner,
+  FormStyled,
+  AForgot,
+  ASignup,
+} from "../components/Auth/signupElements";
 
 import PageWrapper from "../components/PageWrapper";
-import { device } from "../utils";
+import setAuthToken from "../utils/setAuthToken";
+import Router from "next/router";
 
-import Logo from "../components/Logo";
-
+// todo: Add Redux
+import { useSelector, useDispatch } from "react-redux";
 import { userReducer } from "../redux/reducers/user";
-
-const BoxStyled = styled(Box)`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
-
-const BoxInner = styled(Box)`
-  margin-top: -65px;
-  min-height: 100vh;
-`;
-
-const FormStyled = styled.form`
-  padding: 40px 30px;
-  @media ${device.sm} {
-    padding: 53px 58px 50px;
-  }
-  box-shadow: ${({ theme }) => `0 20px 61px ${theme.colors.shadow}`};
-  border-radius: 10px;
-  background-color: ${({ theme }) => theme.colors.light};
-  width: 100%;
-`;
-
-const AForgot = styled.a`
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
-  color: ${({ theme }) => theme.colors.secondary} !important;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  text-decoration: none !important;
-`;
-
-const ASignup = styled.a`
-  cursor: pointer;
-  right: 15px;
-  color: ${({ theme }) => theme.colors.secondary} !important;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  text-decoration: none !important;
-`;
+import axios from "axios";
 
 const SignIn = () => {
+  // hooks
+  const { loadUser } = userReducer.actions;
+  const dispatch = useDispatch();
+  const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
+  // Get the logged in user's data
+  useEffect(() => {
+    const fetchUserData = async () => {
+      if (localStorage.token) {
+        setAuthToken(localStorage.token); // sets the x-auth headers
+      }
+      try {
+        const userData = await axios.get("/api/auth");
+        dispatch(loadUser(userData.data));
+      } catch (err) {
+        console.log("user is not authenticated");
+      }
+    };
+    fetchUserData();
+  }, []);
+
+  // Check if the user is authenticated from the redux store - this will check before the update
+  if (isAuthenticated) {
+    Router.push("/");
+  }
   // Setup hook to store all the form data that will be submitted
   const [formData, setFormData] = useState({
     email: "",
@@ -68,8 +54,28 @@ const SignIn = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = () => {
-    console.log("success");
+  const onSubmit = async () => {
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    const body = JSON.stringify({
+      name: formData.name,
+      password: formData.password,
+    });
+    try {
+      // try registering user to db
+      const res = await axios.post("/api/auth", body, config);
+      localStorage.setItem("token", res.data.token);
+      if (localStorage.token) {
+        setAuthToken(localStorage.token); // sets the x-auth headers
+      }
+      const userData = await axios.get("/api/auth");
+      dispatch(loadUser(userData.data));
+    } catch (err) {
+      console.log("wrong username or password");
+    }
   };
   return (
     <>
