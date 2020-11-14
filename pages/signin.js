@@ -10,6 +10,8 @@ import { device } from "../utils";
 
 import Logo from "../components/Logo";
 
+import { userReducer } from "../redux/reducers/user";
+
 const BoxStyled = styled(Box)`
   min-height: 100vh;
   display: flex;
@@ -56,6 +58,7 @@ const ASignup = styled.a`
 `;
 
 const SignIn = () => {
+  console.log(userReducer);
   // Setup hook to store all the form data that will be submitted
   const [formData, setFormData] = useState({
     email: "",

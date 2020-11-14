@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const userReducer = createSlice({
-  name: "counter",
+  name: "user",
   initialState: {
     name: "",
     email: "",
@@ -13,6 +13,15 @@ export const userReducer = createSlice({
     testReducer: (state) => {
       state.completion["test"] = 1;
     },
-    // create action that changes isAuthenticated to true
+    // todo: load user action
+    loadUser: (state, userData) => {
+      const { name, email } = userData.payload;
+      state.name = name;
+      state.email = email;
+    },
+    // todo: Register action
+    register: (state, payload) => {
+      // if register is a success then we set to the payload
+    },
   },
 });

@@ -3,6 +3,7 @@ import User from "../../../models/User";
 // import bcrypt, jwt, etc...
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+// we need to import
 dbConnect();
 
 export default async (req, res) => {

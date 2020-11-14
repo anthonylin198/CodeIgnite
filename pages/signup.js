@@ -8,6 +8,12 @@ import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
 import PageWrapper from "../components/PageWrapper";
 import Logo from "../components/Logo";
 import { device } from "../utils";
+// todo: Adding redux
+import { useSelector, useDispatch } from "react-redux";
+import { registerAction } from "../redux/actions/user";
+import { userReducer } from "../redux/reducers/user";
+import axios from "axios";
+import setAuthToken from "../utils/setAuthToken";
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
@@ -39,6 +45,8 @@ const AForgot = styled.a`
 
 const SignUp = () => {
   // todo adding functionality
+  const { register, loadUser } = userReducer.actions;
+  const dispatch = useDispatch();
 
   // Setup hook to store all the form data that will be submitted
   const [formData, setFormData] = useState({
@@ -51,12 +59,33 @@ const SignUp = () => {
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const onSubmit = () => {
+  const onSubmit = async () => {
     if (formData.password !== formData.confirmPassword) {
       console.log("Passwords do not match");
     } else {
-      console.log("success");
-      // register the user
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const body = JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+      });
+      try {
+        const res = await axios.post("/api/user", body, config);
+        localStorage.setItem("token", res.data.token);
+        if (localStorage.token) {
+          setAuthToken(localStorage.token);
+        }
+        const userData = await axios.get("/api/auth");
+        console.log(userData.data);
+        dispatch(loadUser(userData.data));
+      } catch (err) {
+        console.log("this is an error");
+      }
     }
   };
   return (
