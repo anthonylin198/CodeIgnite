@@ -229,6 +229,7 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+              {/* Conditional, would just change to Welcome, Annthony drop down instead of a button if logged in */}
               <Button
                 linkTo="signin"
                 size="sm"
