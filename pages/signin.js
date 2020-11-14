@@ -58,7 +58,6 @@ const ASignup = styled.a`
 `;
 
 const SignIn = () => {
-  console.log(userReducer);
   // Setup hook to store all the form data that will be submitted
   const [formData, setFormData] = useState({
     email: "",
