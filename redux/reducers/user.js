@@ -18,6 +18,7 @@ export const userReducer = createSlice({
       const { name, email } = userData.payload;
       state.name = name;
       state.email = email;
+      state.isAuthenticated = true;
     },
     // todo: Register action
     register: (state, payload) => {

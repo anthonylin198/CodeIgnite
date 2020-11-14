@@ -1,49 +1,30 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-
-import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
-
+import { Title, Button, Box, Input } from "../components/Core";
 import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
-import { device } from "../utils";
+import setAuthToken from "../utils/setAuthToken";
+import {
+  BoxStyled,
+  BoxInner,
+  FormStyled,
+  AForgot,
+} from "../components/Auth/signupElements";
+
+import Router from "next/router";
+
 // todo: Adding redux
 import { useSelector, useDispatch } from "react-redux";
-import { registerAction } from "../redux/actions/user";
 import { userReducer } from "../redux/reducers/user";
 import axios from "axios";
-import setAuthToken from "../utils/setAuthToken";
-
-const BoxStyled = styled(Box)`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
-
-const BoxInner = styled(Box)`
-  margin-top: -65px;
-  min-height: 100vh;
-`;
-
-const FormStyled = styled.form`
-  padding: 40px 30px;
-  @media ${device.sm} {
-    padding: 53px 58px 50px;
-  }
-  box-shadow: ${({ theme }) => `0 20px 61px ${theme.colors.shadow}`};
-  border-radius: 10px;
-  background-color: ${({ theme }) => theme.colors.light};
-  width: 100%;
-`;
-
-const AForgot = styled.a`
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.secondary} !important;
-  text-decoration: none !important;
-`;
 
 const SignUp = () => {
+  // Check if the user is authenticated from the redux store
+  const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
+  if (isAuthenticated) {
+    // redirect to home
+    Router.push("/");
+  }
   // todo adding functionality
   const { register, loadUser } = userReducer.actions;
   const dispatch = useDispatch();
@@ -81,7 +62,6 @@ const SignUp = () => {
           setAuthToken(localStorage.token);
         }
         const userData = await axios.get("/api/auth");
-        console.log(userData.data);
         dispatch(loadUser(userData.data));
       } catch (err) {
         console.log("this is an error");
