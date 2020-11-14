@@ -12,7 +12,7 @@ const Category = ({ title, cardsArray }) => {
   const cards = cardsArray.map((card, i) => {
     return (
       <ModuleCard
-        linkTitle=""
+        linkTo="article"
         preTitle={card.name}
         title={card.title}
         key={i}

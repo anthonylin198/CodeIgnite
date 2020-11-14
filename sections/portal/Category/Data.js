@@ -6,12 +6,13 @@ export const overview = {
       name: "Module 1",
       title: "Course Introduction",
       description: "Get an overview of all the content you are going to learn",
+      linkTo: "article",
     },
-    {
-      name: "Module 2",
-      title: "Get the Most out of the Course",
-      description: "Get the Most out of the course",
-    },
+    // {
+    //   name: "Module 2",
+    //   title: "Get the Most out of the Course",
+    //   description: "Get the Most out of the course",
+    // },
   ],
 };
 
