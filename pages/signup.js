@@ -56,10 +56,12 @@ const SignUp = () => {
         password: formData.password,
       });
       try {
+        // try registering user to db
         const res = await axios.post("/api/user", body, config);
+        // if successful, set the auth token and find the user
         localStorage.setItem("token", res.data.token);
         if (localStorage.token) {
-          setAuthToken(localStorage.token);
+          setAuthToken(localStorage.token); // sets the x-auth headers
         }
         const userData = await axios.get("/api/auth");
         dispatch(loadUser(userData.data));
