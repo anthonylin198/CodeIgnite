@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
@@ -38,6 +38,27 @@ const AForgot = styled.a`
 `;
 
 const SignUp = () => {
+  // todo adding functionality
+
+  // Setup hook to store all the form data that will be submitted
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const onSubmit = () => {
+    if (formData.password !== formData.confirmPassword) {
+      console.log("Passwords do not match");
+    } else {
+      console.log("success");
+      // register the user
+    }
+  };
   return (
     <>
       <PageWrapper>
@@ -64,25 +85,48 @@ const SignUp = () => {
                         {/* <Text>No credit card required</Text> */}
                       </div>
                       <Box mb={3}>
-                        <Input type="text" placeholder="Full Name" />
+                        <Input
+                          name="name"
+                          type="text"
+                          placeholder="Full Name"
+                          onChange={(e) => {
+                            onChange(e);
+                          }}
+                        />
                       </Box>
                       <Box mb={3}>
-                        <Input type="email" placeholder="Email address" />
+                        <Input
+                          name="email"
+                          type="email"
+                          placeholder="Email address"
+                          onChange={(e) => {
+                            onChange(e);
+                          }}
+                        />
                       </Box>
 
+                      <Box mb={3} className="position-relative">
+                        <Input
+                          name="password"
+                          type="password"
+                          placeholder="Password"
+                          onChange={(e) => {
+                            onChange(e);
+                          }}
+                        />
+                      </Box>
                       <Box mb={4} className="position-relative">
-                        <Input type="password" placeholder="Password" />
+                        <Input
+                          name="confirmPassword"
+                          type="password"
+                          placeholder="Confirm password"
+                          onChange={(e) => {
+                            onChange(e);
+                          }}
+                        />
                       </Box>
-                      {/* <Box mb={3} className="text-left">
-                        <Checkbox>
-                          I agree to the{" "}
-                          <Link href="/">
-                            <AForgot>Terms & Condition</AForgot>
-                          </Link>
-                        </Checkbox>
-                      </Box> */}
 
-                      <Button>Get Started</Button>
+                      <Button onClick={() => onSubmit()}>Get Started</Button>
                       <Box mt={3}>
                         Already have an account?{" "}
                         <Link href="/signin">

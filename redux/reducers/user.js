@@ -9,6 +9,7 @@ export const userReducer = createSlice({
     isAuthenticated: false,
   },
   reducers: {
+    // ! put the actions here
     testReducer: (state) => {
       state.completion["test"] = 1;
     },

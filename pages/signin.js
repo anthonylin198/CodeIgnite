@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
@@ -56,6 +56,19 @@ const ASignup = styled.a`
 `;
 
 const SignIn = () => {
+  // Setup hook to store all the form data that will be submitted
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = () => {
+    console.log("success");
+  };
   return (
     <>
       <PageWrapper>
@@ -82,10 +95,17 @@ const SignIn = () => {
                         <Text>Enter your account details below</Text>
                       </div>
                       <Box mb={3}>
-                        <Input type="email" placeholder="Email" />
+                        <Input
+                          onChange={(e) => onChange(e)}
+                          name="email"
+                          type="email"
+                          placeholder="Email"
+                        />
                       </Box>
                       <Box mb={4} className="position-relative">
                         <Input
+                          onChange={(e) => onChange(e)}
+                          name="password"
                           type="password"
                           placeholder="Password"
                           css={`
@@ -100,7 +120,7 @@ const SignIn = () => {
                         <Checkbox>Keep me signed in</Checkbox>
                       </Box>
 
-                      <Button>Get Started</Button>
+                      <Button onClick={() => onSubmit()}>Login</Button>
                       <Box mt={3}>
                         No account?{" "}
                         <Link href="/signup">
