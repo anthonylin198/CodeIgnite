@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Box, Input } from "../components/Core";
@@ -19,7 +19,22 @@ import { userReducer } from "../redux/reducers/user";
 import axios from "axios";
 
 const SignUp = () => {
-  // Check if the user is authenticated from the redux store
+  //! todo: Create something that will always check the auth token and load the user's state
+  useEffect(() => {
+    const fetchUserData = async () => {
+      if (localStorage.token) {
+        setAuthToken(localStorage.token); // sets the x-auth headers
+      }
+      try {
+        const userData = await axios.get("/api/auth");
+        dispatch(loadUser(userData.data));
+      } catch (err) {
+        console.log("user is not authenticated");
+      }
+    };
+    fetchUserData();
+  }, []);
+  // Check if the user is authenticated from the redux store - this will check before the update
   const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
   if (isAuthenticated) {
     // redirect to home
