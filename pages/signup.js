@@ -19,7 +19,7 @@ import { userReducer } from "../redux/reducers/user";
 import axios from "axios";
 
 const SignUp = () => {
-  //! todo: Create something that will always check the auth token and load the user's state
+  // Check the user's state
   useEffect(() => {
     const fetchUserData = async () => {
       if (localStorage.token) {
