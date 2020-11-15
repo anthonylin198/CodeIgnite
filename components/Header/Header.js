@@ -23,6 +23,7 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { userReducer } from "../../redux/reducers/user";
 import setAuthToken from "../../utils/setAuthToken";
+import { loadUserAction } from "../../redux/actions/user";
 
 const Header = ({ isDark = false }) => {
   const gContext = useContext(GlobalContext);
@@ -33,22 +34,21 @@ const Header = ({ isDark = false }) => {
   const { loadUser } = userReducer.actions;
   const dispatch = useDispatch();
 
-  // todo: Useffect with loading the user data
+  // todo: Loading in the user data
   useEffect(() => {
-    const fetchUserData = async () => {
-      if (localStorage.token) {
-        setAuthToken(localStorage.token); // sets the x-auth headers
-      }
-      try {
-        const userData = await axios.get("/api/auth");
-        dispatch(loadUser(userData.data));
-        console.log("we made it through");
-      } catch (err) {
-        console.log("user is not authenticated");
-      }
-    };
-    fetchUserData();
+    dispatch(loadUserAction());
   }, []);
+
+  // todo: Checking if the user is authenticated - different for each page
+  useEffect(() => {
+    if (userInfo.user.isAuthenticated) {
+      console.log("the user is authenticated");
+      // we want to return authenticated menu
+    } else {
+      console.log("not authenticate");
+      // return non authenticated menu
+    }
+  }, [userInfo]);
 
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
@@ -63,16 +63,6 @@ const Header = ({ isDark = false }) => {
     }
   });
 
-  // Check if the user is authenticated from the redux store, connect to check everytime userinfo changes
-  useEffect(() => {
-    if (userInfo.user.isAuthenticated) {
-      console.log("the user is authenticated");
-      // we want to return authenticated menu
-    } else {
-      console.log("not authenticate");
-      // return non authenticated menu
-    }
-  }, [userInfo]);
   return (
     <>
       <SiteHeader
