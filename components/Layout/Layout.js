@@ -46,9 +46,14 @@ const Loader = styled.div`
 // create a div
 const LoaderContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
+`;
+
+const LoadingText = styled.h5`
+  color: black;
 `;
 
 // options for different color modes
@@ -137,8 +142,18 @@ const Layout = ({ children, pageContext }) => {
         </Head>
         {/* put loading here */}
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
+          {/* https://tobiasahlin.com/spinkit/ */}
           <LoaderContainer>
-            <h3>loading...</h3>
+            <div className="sk-chase">
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+            </div>
+            <br></br>
+            <LoadingText>Please Wait...</LoadingText>
           </LoaderContainer>
           <div className="load-circle">
             <span className="one" />
