@@ -23,6 +23,7 @@ const globalStyle = createGlobalStyle`
   }
 
 
+
   a {
     color: ${({ theme }) => theme.colors.text} !important;
     transition: all 0.3s ease-out;
@@ -43,6 +44,9 @@ const globalStyle = createGlobalStyle`
     input[type="number"] {
       -moz-appearance: textfield; /* Firefox */
     }
+
+    // Add in loading CSS here
+
 `;
 
 export default globalStyle;

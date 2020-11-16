@@ -25,6 +25,7 @@ import { get, merge } from "lodash";
 // the full theme object
 import { theme as baseTheme } from "../../utils";
 
+// Loader is currently just a blank screen
 const Loader = styled.div`
   position: fixed;
   top: 0;
@@ -40,6 +41,14 @@ const Loader = styled.div`
     opacity: 0;
     visibility: hidden;
   }
+`;
+
+// create a div
+const LoaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 `;
 
 // options for different color modes
@@ -126,7 +135,11 @@ const Layout = ({ children, pageContext }) => {
           <title>CodeIgnite</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Head>
+        {/* put loading here */}
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
+          <LoaderContainer>
+            <h3>loading...</h3>
+          </LoaderContainer>
           <div className="load-circle">
             <span className="one" />
           </div>
