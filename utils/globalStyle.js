@@ -45,8 +45,8 @@ const globalStyle = createGlobalStyle`
       -moz-appearance: textfield; /* Firefox */
     }
 
-    // Add in loading CSS here
-    .sk-chase {
+  // ! Add in loading CSS here
+  .sk-chase {
   width: 40px;
   height: 40px;
   position: relative;
@@ -67,7 +67,7 @@ const globalStyle = createGlobalStyle`
   display: block;
   width: 25%;
   height: 25%;
-  background-color: blue;
+  background-color: #5454d4;
   border-radius: 100%;
   animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
 }
