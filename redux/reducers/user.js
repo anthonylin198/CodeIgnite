@@ -25,7 +25,13 @@ export const userReducer = createSlice({
     register: (state, payload) => {
       // if register is a success then we set to the payload
     },
-    // load user action
+    // todo: logout user action - we just remove all the user data
+    logout: (state, payload) => {
+      localStorage.removeItem("token");
+      state.name = "";
+      state.email = "";
+      state.isAuthenticated = false;
+    },
   },
   // must put asyncstuff here
   extraReducers: {

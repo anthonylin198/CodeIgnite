@@ -18,7 +18,12 @@ import NestedMenu from "../NestedMenu";
 import Logo from "../Logo";
 import { menuItems } from "./menuItems";
 
-const UserMenu = ({ isDark = false }) => {
+// redux
+import { useSelector, useDispatch } from "react-redux";
+import { userReducer } from "../../redux/reducers/user";
+import Router from "next/router";
+
+const UserMenu = ({ isDark = false, setIsAuthenticated }) => {
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
@@ -36,6 +41,15 @@ const UserMenu = ({ isDark = false }) => {
     }
   });
 
+  const dispatch = useDispatch();
+  function logout() {
+    // delete the auth token
+    dispatch(userReducer.actions.logout());
+    // setIsAuthenticated(false);
+    Router.reload(window.location.pathname);
+    // redirect to home
+  }
+
   return (
     <>
       <SiteHeader
@@ -47,7 +61,7 @@ const UserMenu = ({ isDark = false }) => {
         <Container fluid>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
             <Link href="signin">
-              <MobileLogin>Login</MobileLogin>
+              <MobileLogin onClick={() => logout()}>Logout</MobileLogin>
             </Link>
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
@@ -195,8 +209,9 @@ const UserMenu = ({ isDark = false }) => {
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
               {/* Conditional, would just change to Welcome, Annthony drop down instead of a button if logged in */}
               <Button
-                linkTo="signin"
-                size="sm"
+                onClick={() => logout()}
+                // linkTo=""
+                // size="sm"
                 css={`
                   font-size: 16px !important;
                   min-width: 141px !important;

@@ -25,13 +25,12 @@ const Header = ({ isDark = false }) => {
   if (isAuthenticated) {
     return (
       <>
-        <UserMenu isDark={isDark} />
+        <UserMenu isDark={isDark} setIsAuthenticated={setIsAuthenticated} />
       </>
     );
   } else {
     return (
       <>
-        <h1>guest</h1>
         <GuestMenu isDark={isDark} />
       </>
     );
