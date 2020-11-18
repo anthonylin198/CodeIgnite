@@ -19,11 +19,6 @@ const Header = ({ isDark = false }) => {
   useEffect(() => {
     if (userInfo.user.isAuthenticated) {
       setIsAuthenticated(true);
-      console.log("the user is authenticated");
-      // we want to return authenticated menu
-    } else {
-      console.log("not authenticate");
-      // return non authenticated menu
     }
   }, [userInfo]);
 
