@@ -10,14 +10,12 @@ const Header = ({ isDark = false }) => {
   // todo: redux
   const userInfo = useSelector((state) => state);
   const dispatch = useDispatch();
-
+  // todo: Checking if the user is authenticated - different for each page
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   // todo: Loading in the user data
   useEffect(() => {
     dispatch(loadUserAction());
   }, []);
-
-  // todo: Checking if the user is authenticated - different for each page
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
   useEffect(() => {
     if (userInfo.user.isAuthenticated) {
       setIsAuthenticated(true);
