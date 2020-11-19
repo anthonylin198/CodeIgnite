@@ -17,6 +17,8 @@ import Demo from "../components/LandingPages/Demo";
 import Footer from "../components/LandingPages/Footer";
 
 // todo: new stuff
+import HeroCenter from "../sections/common/HeroCenter";
+
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/common/Hero";
 import Feature2 from "../sections/about/Features";
@@ -34,9 +36,10 @@ const fullstack = () => {
   return (
     <>
       <PageWrapper footerDark>
-        <Hero title="Full-Stack Course">
-          Learn modern full-stack software engineering
-        </Hero>
+        <HeroCenter title="Full-Stack Course">
+          Modern Full Stack Web Development
+        </HeroCenter>
+
         <Features3 />
         {/* <Content /> */}
         {/* <Feature4 /> */}
