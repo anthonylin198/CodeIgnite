@@ -65,6 +65,7 @@ export const Menu = styled.ul`
       }
     }
   }
+
   .nav-item.dropdown {
     @media ${device.lg} {
       position: relative;
@@ -181,5 +182,9 @@ export const MenuDropdown = styled.ul`
   &.dropdown-right {
     left: auto;
     right: -90%;
+  }
+  &.dropdown-middle {
+    left: auto;
+    right: 10%;
   }
 `;

@@ -23,7 +23,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { userReducer } from "../../redux/reducers/user";
 import Router from "next/router";
 
-const UserMenu = ({ isDark = false, setIsAuthenticated }) => {
+const UserMenu = ({ isDark = false, name }) => {
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
@@ -203,24 +203,37 @@ const UserMenu = ({ isDark = false, setIsAuthenticated }) => {
                       );
                     }
                   )}
+                  {/* User profile information */}
+                  <React.Fragment>
+                    <li className="nav-item dropdown user">
+                      <a
+                        style={{ color: "blue" }}
+                        className="nav-link dropdown-toggle"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                        href="/#"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Hi, {name}
+                      </a>
+
+                      <MenuDropdown
+                        className="menu-dropdown dropdown-middle"
+                        dark={isDark ? 1 : 0}
+                      >
+                        <li className="drop-menu-item">
+                          <Link href={`/`}>
+                            <a onClick={() => logout()}>logout</a>
+                          </Link>
+                        </li>
+                      </MenuDropdown>
+                    </li>
+                  </React.Fragment>
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-              {/* Conditional, would just change to Welcome, Annthony drop down instead of a button if logged in */}
-              <Button
-                onClick={() => logout()}
-                // linkTo=""
-                // size="sm"
-                css={`
-                  font-size: 16px !important;
-                  min-width: 141px !important;
-                  height: 45px !important;
-                `}
-              >
-                Logout
-              </Button>
-            </div>
+
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
                 gContext.visibleOffCanvas ? "collapsed" : ""

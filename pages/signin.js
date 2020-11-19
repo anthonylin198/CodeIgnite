@@ -124,9 +124,9 @@ const SignIn = () => {
                           <AForgot>Forgot Password?</AForgot>
                         </Link>
                       </Box>
-                      <Box mb={3} className="text-left">
+                      {/* <Box mb={3} className="text-left">
                         <Checkbox>Keep me signed in</Checkbox>
-                      </Box>
+                      </Box> */}
 
                       <Button onClick={() => onSubmit()}>Login</Button>
                       <Box mt={3}>
