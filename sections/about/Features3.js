@@ -77,6 +77,7 @@ const Features3 = () => (
       {/* <ShapeBottmRight>
         <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
       </ShapeBottmRight> */}
+      {/* coment */}
       <Container>
         <Row className="align-items-center">
           <Col lg="6" className="pl-lg-5 order-lg-2">
