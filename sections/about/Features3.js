@@ -67,16 +67,16 @@ const Features3 = () => (
   <>
     {/* <!-- Feature section --> */}
     <Section bg="secondary" className="position-relative">
-      <ShapeTopRight
+      {/* <ShapeTopRight
         data-aos="fade-left"
         data-aos-duration="750"
         data-aos-once="true"
       >
         <img src={imgL1FeatureOval} alt="" className="img-fluid" />
-      </ShapeTopRight>
-      <ShapeBottmRight>
+      </ShapeTopRight> */}
+      {/* <ShapeBottmRight>
         <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
-      </ShapeBottmRight>
+      </ShapeBottmRight> */}
       <Container>
         <Row className="align-items-center">
           <Col lg="6" className="pl-lg-5 order-lg-2">

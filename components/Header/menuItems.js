@@ -88,10 +88,11 @@ export const menuItems = [
   //     },
   //   ],
   // },
+  // HERE PUT BACK IN
   {
-    name: "About Us",
+    name: "about",
     label: "About Us",
-    isExternal: true,
+    // isExternal: true,
   },
   {
     name: "fullstackcourse",

@@ -49,14 +49,13 @@ const Content = () => {
           <Row className="justify-content-center pb-5 mb-5">
             <Col lg="6">
               <Title variant="hero" className="mb-0">
-                Watch how we work here.
+                Why CodeIgnite
               </Title>
             </Col>
             <Col lg="6" className="pl-lg-5 d-flex align-items-end">
               <Text>
-                These companies release their own versions of the operating
-                systems with minor changes, and yet always with the same bottom
-                line.
+                CodeIgnite brings product focus to technical computer science
+                education
               </Text>
             </Col>
           </Row>

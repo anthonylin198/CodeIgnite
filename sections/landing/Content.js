@@ -67,9 +67,8 @@ const Feature = () => (
               <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.7}>
                 Our curriculum begins by building a strong foundation of core
-                programming concepts, to turning those skills and mindset
-                towards building scalable software solutions to solve real world
-                problems.
+                programming concepts, to turning those skills towards building
+                scalable software solutions to solve real world problems.
               </Text>
               <ScrollButton
                 to="courses"
@@ -115,7 +114,7 @@ const Feature = () => (
                     iconName="icon-sidebar-2"
                     title="Awesome Community"
                   >
-                    Learn and connect with likeminded individuals to build
+                    Learn and connect with like-minded individuals to build
                     innovative prouducts
                   </FeatureCard>
                 </Col>
