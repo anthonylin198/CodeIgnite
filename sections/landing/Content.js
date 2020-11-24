@@ -66,9 +66,9 @@ const Feature = () => (
             <Box>
               <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.9}>
-                Our curriculum begins by building a strong foundation of core
-                programming concepts, to turning those skills towards building
-                scalable software solutions to solve real world problems.
+                Our curriculum is designed to provide students with an
+                entrepreneurial mindset and the technical ability to build
+                scalable software solutions to bring their ideas to life
               </Text>
               <ScrollButton
                 to="courses"
@@ -96,7 +96,7 @@ const Feature = () => (
                   <FeatureCard
                     color="primary"
                     iconName="icon-layout-11"
-                    title="Innovative Curriculum"
+                    title="Integrated Portal"
                   >
                     Integrated learning environment to get the most out of it
                   </FeatureCard>
@@ -129,10 +129,10 @@ const Feature = () => (
                   <FeatureCard
                     color="dark"
                     iconName="icon-voice-recognition-2"
-                    title="College Level Portfolio"
+                    title="Project-Based Learning"
                   >
-                    Students will have a college level portfolio of projects
-                    leading up to a production project
+                    Students will build real world projects to build up their
+                    portfolio
                   </FeatureCard>
                 </Col>
               </Row>

@@ -163,10 +163,10 @@ const Hero = () => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
-                  <Title variant="hero">Remote Coding Courses</Title>
+                  <Title variant="hero">Remote Coding Programs</Title>
                   <Text mb={4}>
-                    Our computer science programs set students up to become
-                    autonomous engineers with college level portfolios
+                    Our curriculum sets students up to become autonomous
+                    thinkers with the technical capability to launch their ideas
                   </Text>
 
                   <div className="d-flex flex-column align-items-start">
