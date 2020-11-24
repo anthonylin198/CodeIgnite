@@ -11,15 +11,15 @@ const CTA = () => (
         <Row className="justify-content-center">
           <Col md="8" lg="7">
             <Box className="text-center">
-              <Title color="dark">Try the Course for Free</Title>
+              <Title color="dark">Coming Soon</Title>
               <Text mb={4} color="dark" opacity={0.7}>
-                Get the first section, Javascript Fundamentals, for free!
+                Be the first notified when the program is ready
               </Text>
               <div className="d-flex flex-column align-items-center pt-3">
                 {/* Go to the button and add the title link thing */}
-                <Button linkTo="fullstackcourse" mb={2}>
+                {/* <Button linkTo="fullstackcourse" mb={2}>
                   Start Now
-                </Button>
+                </Button> */}
 
                 {/* <Text
                   variant="small"

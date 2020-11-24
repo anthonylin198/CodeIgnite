@@ -1,12 +1,13 @@
 export const menuItems = [
-  {
-    name: "Courses",
-    label: "Courses",
-    items: [
-      { name: "fullstack", label: "Full-Stack Course" },
-      { name: "codinginterview", label: "Coding Interview Pro" },
-    ],
-  },
+  // {
+  //   name: "Courses",
+  //   label: "Courses",
+  //   items: [
+  //     { name: "fullstack", label: "Full-Stack Course" },
+  //     { name: "codinginterview", label: "Coding Interview Pro" },
+  //   ],
+  // },
+
   // {
   //   name: "pages",
   //   label: "Pages",
@@ -90,13 +91,18 @@ export const menuItems = [
   // },
   // HERE PUT BACK IN
   {
+    name: "fullstack",
+    label: "Program Overview",
+    // isExternal: true,
+  },
+  {
     name: "about",
     label: "About Us",
     // isExternal: true,
   },
-  {
-    name: "https://code-ignite-portal.vercel.app/",
-    label: "Portal",
-    isExternal: true,
-  },
+  // {
+  //   name: "https://code-ignite-portal.vercel.app/",
+  //   label: "Portal",
+  //   isExternal: true,
+  // },
 ];
