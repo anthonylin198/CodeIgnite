@@ -65,7 +65,7 @@ const Feature = () => (
           >
             <Box>
               <Title color="light">Creating Problem Solvers.</Title>
-              <Text color="light" opacity={0.7}>
+              <Text color="light" opacity={0.9}>
                 Our curriculum begins by building a strong foundation of core
                 programming concepts, to turning those skills towards building
                 scalable software solutions to solve real world problems.
