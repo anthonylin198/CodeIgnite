@@ -75,7 +75,7 @@ const CTA = () => (
             data-aos-once="true"
           >
             <div className="">
-              <Title color="light">Learn Now</Title>
+              <Title color="light">Join The Waiting List</Title>
               <Text color="light" opacity={0.9} mb={4}>
                 The portal is currently under development. Be the first to be
                 notified when the portal is complete

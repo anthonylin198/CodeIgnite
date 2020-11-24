@@ -81,7 +81,7 @@ const Content1 = () => (
                   visitors than any website. With lots of unique blocks, you can
                   easily build a page without coding.
                 </Text>
-                <Button mt={4}>Get Started</Button>
+                <Button mt={4}>Download Syllabus</Button>
               </div>
             </Section>
           </Col>

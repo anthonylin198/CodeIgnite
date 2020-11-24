@@ -100,11 +100,11 @@ export const menuItems = [
     label: "Program Overview",
     // isExternal: true,
   },
-  {
-    name: "about",
-    label: "About Us",
-    // isExternal: true,
-  },
+  // {
+  //   name: "about",
+  //   label: "About Us",
+  //   // isExternal: true,
+  // },
   // {
   //   name: "https://code-ignite-portal.vercel.app/",
   //   label: "Portal",

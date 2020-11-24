@@ -99,7 +99,8 @@ const Feature = () => (
                     iconName="icon-layout-11"
                     title="Integrated Portal"
                   >
-                    Integrated learning environment to get the most out of it
+                    Learning environment to get an immersive experience on a
+                    flexible schedule
                   </FeatureCard>
                 </Col>
                 <Col
@@ -113,10 +114,10 @@ const Feature = () => (
                   <FeatureCard
                     color="ash"
                     iconName="icon-sidebar-2"
-                    title="Awesome Community"
+                    title="Technical Skills"
                   >
                     Learn and connect with like-minded individuals to build
-                    innovative prouducts
+                    innovative products
                   </FeatureCard>
                 </Col>
                 <Col
@@ -132,8 +133,7 @@ const Feature = () => (
                     iconName="icon-voice-recognition-2"
                     title="Project-Based Learning"
                   >
-                    Students will build real world projects to build up their
-                    portfolio
+                    Students will build real world projects for their portfolio
                   </FeatureCard>
                 </Col>
               </Row>
