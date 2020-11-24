@@ -80,7 +80,9 @@ const Content1 = () => (
                   Based off the student's ideation and interest, students have
                   the ability to choose the path that they want to build,
                   ranging from computer science to data science and machine
-                  learning
+                  learning. We provide full comprehensive courses that actually
+                  give students the skills they need to bring their ideas to
+                  life.
                 </Text>
                 <Button mt={4}>Get Started</Button>
               </div>

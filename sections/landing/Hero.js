@@ -163,7 +163,7 @@ const Hero = () => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
-                  <Title variant="hero">Remote Coding Programs</Title>
+                  <Title variant="hero">Creating Future Leaders</Title>
                   <Text mb={4}>
                     Our curriculum empowers students to be autonomous thinkers
                     with the technical capability to launch their ideas

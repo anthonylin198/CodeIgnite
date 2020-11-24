@@ -66,8 +66,7 @@ const Feature = () => (
             <Box>
               <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.9}>
-                Starting a business today is different then it used to be. Our
-                curriculum is designed to give students an entrepreneurial
+                Our curriculum is designed to give students an entrepreneurial
                 mindset and the technical ability to bring their ideas to life
                 and become the technical leaders of tomorrow
               </Text>
@@ -97,10 +96,10 @@ const Feature = () => (
                   <FeatureCard
                     color="primary"
                     iconName="icon-layout-11"
-                    title="Integrated Portal"
+                    title="Entrepreneurial Mindset"
                   >
-                    Learning environment to get an immersive experience on a
-                    flexible schedule
+                    Students are taught the foundations of the startup world and
+                    ideation
                   </FeatureCard>
                 </Col>
                 <Col
@@ -116,8 +115,25 @@ const Feature = () => (
                     iconName="icon-sidebar-2"
                     title="Technical Skills"
                   >
-                    Learn and connect with like-minded individuals to build
-                    innovative products
+                    Students pick their speciality and learn core skills from
+                    software engineering to finance
+                  </FeatureCard>
+                </Col>
+                <Col
+                  md="12"
+                  className="mt-4"
+                  data-aos="fade-right"
+                  data-aos-duration="750"
+                  data-aos-once="true"
+                  data-aos-delay="50"
+                >
+                  <FeatureCard
+                    color="dark"
+                    iconName="icon-voice-recognition"
+                    title="Team Building Community"
+                  >
+                    Students can form teams with people of different skillsets
+                    for their startup team
                   </FeatureCard>
                 </Col>
                 <Col
@@ -131,9 +147,10 @@ const Feature = () => (
                   <FeatureCard
                     color="dark"
                     iconName="icon-voice-recognition-2"
-                    title="Project-Based Learning"
+                    title="Real World Projects"
                   >
-                    Students will build real world projects for their portfolio
+                    Students learn the most in demand skills and build real
+                    world projects for their portfolio
                   </FeatureCard>
                 </Col>
               </Row>
