@@ -66,9 +66,9 @@ const Feature = () => (
             <Box>
               <Title color="light">Creating Problem Solvers.</Title>
               <Text color="light" opacity={0.9}>
-                Our curriculum is designed to provide students with an
-                entrepreneurial mindset and the technical ability to build
-                scalable software solutions to bring their ideas to life
+                Our curriculum is designed to give students an entrepreneurial
+                mindset and the technical ability to build scalable software
+                solutions to bring their ideas to life
               </Text>
               <ScrollButton
                 to="courses"
