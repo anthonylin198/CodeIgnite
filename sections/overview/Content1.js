@@ -77,9 +77,9 @@ const Content1 = () => (
                   Startup School
                 </Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                  In this first phase, students will be able to identify
+                  problems in the real world and come up with solutions with the
+                  same tactics that companies today started
                 </Text>
                 <Button mt={4}>Download Syllabus</Button>
               </div>
