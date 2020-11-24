@@ -11,7 +11,7 @@ const CTA = () => (
         <Row className="justify-content-center">
           <Col md="8" lg="7">
             <Box className="text-center">
-              <Title color="dark">Innovative Curriculum</Title>
+              <Title color="dark">Our Curriculum</Title>
               <Text mb={4} color="dark" opacity={1}>
                 Learn online in a fully integrated portal that enables students
                 to develop an entrepreneurial mindset and an MVP for their idea
