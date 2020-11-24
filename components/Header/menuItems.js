@@ -91,7 +91,7 @@ export const menuItems = [
   // },
   // HERE PUT BACK IN
   {
-    name: "fullstack",
+    name: "overview",
     label: "Program Overview",
     // isExternal: true,
   },

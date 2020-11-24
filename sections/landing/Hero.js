@@ -165,8 +165,8 @@ const Hero = () => {
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero">Remote Coding Programs</Title>
                   <Text mb={4}>
-                    Our curriculum sets students up to become autonomous
-                    thinkers with the technical capability to launch their ideas
+                    Our curriculum empowers students to be autonomous thinkers
+                    with the technical capability to launch their ideas
                   </Text>
 
                   <div className="d-flex flex-column align-items-start">
