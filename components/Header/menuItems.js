@@ -95,8 +95,8 @@ export const menuItems = [
     // isExternal: true,
   },
   {
-    name: "fullstackcourse",
-    label: "Course Portal",
-    // isExternal: true,
+    name: "https://code-ignite-portal.vercel.app/",
+    label: "Portal",
+    isExternal: true,
   },
 ];
