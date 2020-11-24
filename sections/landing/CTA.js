@@ -19,7 +19,7 @@ const CTA = () => (
               <div className="d-flex flex-column align-items-center pt-3">
                 {/* Go to the button and add the title link thing */}
                 <Button linkTo="overview" mb={2}>
-                  Learn More
+                  View Curriculum
                 </Button>
 
                 {/* <Text

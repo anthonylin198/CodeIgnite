@@ -22,7 +22,7 @@ const Hero = ({ title, children, ...rest }) => {
       >
         <Container>
           <Row className="justify-content-center text-center">
-            <Col lg="7">
+            <Col lg="8">
               <div>
                 <Title variant="hero">{title}</Title>
                 <Text>{children}</Text>
