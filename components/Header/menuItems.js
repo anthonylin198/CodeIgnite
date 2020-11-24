@@ -91,6 +91,11 @@ export const menuItems = [
   // },
   // HERE PUT BACK IN
   {
+    name: "",
+    label: "Home",
+    // isExternal: true,
+  },
+  {
     name: "overview",
     label: "Program Overview",
     // isExternal: true,
