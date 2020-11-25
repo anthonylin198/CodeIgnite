@@ -21,8 +21,8 @@ const overview = () => {
         <Content2 />
         {/* <Feature2 /> */}
         <Content3 />
-        <PortalContent />
-        <CTA />
+        {/* <PortalContent /> */}
+        {/* <CTA /> */}
       </PageWrapper>
     </>
   );
