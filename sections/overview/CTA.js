@@ -2,101 +2,53 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import {
-  Title,
-  Button,
-  Section,
-  Box,
-  Text,
-  InputGroup,
-} from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Button, Box, Text, InputGroup } from "../../components/Core";
 
-import imgCtaBG from "../../assets/image/jpeg/l2-cta-big.jpg";
-import imgOval from "../../assets/image/png/l2-cta-oval.png";
-
-const ImageBottom = styled(Box)`
-  border: 10px solid transparent;
-  box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow}`};
-  position: absolute;
-  top: 21%;
-  right: 0;
-  z-index: 2;
-  border-radius: 500px;
-  max-width: 50%;
-  overflow: hidden;
-
-  @media ${device.md} {
-    max-width: 100%;
-    right: 15%;
-  }
+const FormContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
-const CTA = () => (
-  <>
-    <Section bg="ash" id="curriculum">
-      <Container>
-        <Row className="align-items-center">
-          <Col lg={6} md={10} className="">
-            <div className="position-relative mb-5">
-              <div
-                className="img-1"
-                data-aos="fade-down"
-                data-aos-duration="750"
-                data-aos-once="true"
-              >
-                <img
-                  src={imgCtaBG}
-                  alt=""
-                  className="img-fluid"
-                  css={`
-                    border-radius: 10px;
-                  `}
-                />
-              </div>
-              <ImageBottom
-                className=""
-                bg="light"
-                data-aos="fade-right"
-                data-aos-duration="750"
-                data-aos-once="true"
-                data-aos-delay="500"
-              >
-                <img src={imgOval} alt="" className="img-fluid" />
-              </ImageBottom>
-            </div>
-          </Col>
-          <Col
-            lg={6}
-            md={9}
-            className=""
-            data-aos="fade-right"
-            data-aos-duration="750"
-            data-aos-once="true"
-          >
-            <div className="">
-              <Title color="light">Our Curriculum</Title>
-              <Text color="light" opacity={0.9} mb={4}>
-                The portal is currently under development. Be the first to be
-                notified when the portal is complete
-              </Text>
-              <div className="pr-sm-5">
-                <InputGroup
-                  icon={<i className="icon icon-email-84" />}
-                  placeholder="Email address"
-                  className="text-center"
-                  pr="4.125rem"
-                />
-                <Button width="100%" mt={3}>
-                  Submit
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </Section>
-  </>
-);
+const BgBox = styled(Box)`
+  background-color: #f9f9f9;
+`;
+
+const CTA = () => {
+  return (
+    <>
+      {/* <!-- CTA section --> */}
+      <BgBox className="position-relative" py={[4, null, null, 5, 6]}>
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="8" lg="8">
+              <Box className="text-center">
+                <Title color="dark">Join the Waiting List</Title>
+                <Text mb={4} color="dark" opacity={1}>
+                  The learning portal is currently under development. Enter your
+                  email to be notified upon completion
+                </Text>
+                <div className="d-flex flex-column align-items-center pt-3">
+                  <FormContainer>
+                    {/* Go to the button and add the title link thing */}
+                    <InputGroup
+                      icon={<i className="icon icon-email-84" />}
+                      placeholder="Email address"
+                      className="text-center"
+                      pr="4.125rem"
+                    />
+
+                    <Button linkTo="overview" ml="2">
+                      Submit
+                    </Button>
+                  </FormContainer>
+                </div>
+              </Box>
+            </Col>
+          </Row>
+        </Container>
+      </BgBox>
+    </>
+  );
+};
 
 export default CTA;

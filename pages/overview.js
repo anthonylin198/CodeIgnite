@@ -22,7 +22,7 @@ const overview = () => {
         {/* <Feature2 /> */}
         <Content3 />
         {/* <PortalContent /> */}
-        {/* <CTA /> */}
+        <CTA />
       </PageWrapper>
     </>
   );
