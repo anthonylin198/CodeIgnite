@@ -49,12 +49,12 @@ const Content = () => {
     <>
       <BGSection>
         <Container>
-          <Row className="justify-content-center pb-5 mb-5">
+          <Row className="justify-content-center pb-5">
             <Title variant="hero" className="mb-0">
               The Learning Portal
             </Title>
           </Row>
-          <Row className="justify-content-center pb-5 mb-5">
+          <Row className="justify-content-center  mb-5">
             <Text>Check out</Text>
           </Row>
 
