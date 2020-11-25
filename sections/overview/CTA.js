@@ -34,7 +34,7 @@ const ImageBottom = styled(Box)`
 
 const CTA = () => (
   <>
-    <Section bg="ash">
+    <Section bg="ash" id="curriculum">
       <Container>
         <Row className="align-items-center">
           <Col lg={6} md={10} className="">
@@ -75,7 +75,7 @@ const CTA = () => (
             data-aos-once="true"
           >
             <div className="">
-              <Title color="light">Join The Waiting List</Title>
+              <Title color="light">Our Curriculum</Title>
               <Text color="light" opacity={0.9} mb={4}>
                 The portal is currently under development. Be the first to be
                 notified when the portal is complete

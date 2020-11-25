@@ -94,7 +94,8 @@ const SliderCard = styled(Box)`
     flex-direction: row;
   }
   @media ${device.lg} {
-    margin: 60px 60px 100px 60px !important;
+    /* margin: 60px 60px 100px 60px !important; */
+    margin: 40px 60px 100px 60px !important;
   }
 `;
 
@@ -173,13 +174,13 @@ const Testimonial = () => {
       <Section bg="#F7F7FB" pb={["50px!important"]}>
         <Container>
           <Row className="justify-content-center mb-4">
-            <Col lg="6" md="9">
+            <Col lg="9" md="9">
               <div className="text-center">
-                <Title>Why Us?</Title>
-                <Text>
-                  Students MUST be introduced to practical education at a
+                <Title>Understanding the Problem</Title>
+                {/* <Text style={{ color: "black" }}>
+                  Students need to be introduced to practical education at a
                   younger age
-                </Text>
+                </Text> */}
               </div>
             </Col>
           </Row>
@@ -192,17 +193,25 @@ const Testimonial = () => {
                       <img src={imgCustomer1} alt="" />
                     </SliderImgContainer>
                     <SliderText>
-                      <SliderQuoteShape>
+                      {/* <SliderQuoteShape>
                         <img src={imgQuote} alt="" className="img-fluid" />
-                      </SliderQuoteShape>
+                      </SliderQuoteShape> */}
+                      <Title variant="card" mb={0} mt={3}>
+                        PROBLEM
+                      </Title>
                       <Text color="dark" my={2}>
                         Nearly 80% of students change their major AT LEAST once
                         in university
                       </Text>
                       <Title variant="card" mb={0} mt={3}>
-                        Jonathan Taylor
+                        SOLUTION
                       </Title>
-                      <Text variant="small">CEO at Creativex</Text>
+                      <Text color="dark" my={2}>
+                        Introduce students to the industry and start thinking
+                        early about what they want to do for a career
+                      </Text>
+
+                      {/* <Text variant="small">CEO at Creativex</Text> */}
                     </SliderText>
                   </SliderCard>
                 </SliderItem>
@@ -212,16 +221,24 @@ const Testimonial = () => {
                       <img src={imgCustomer2} alt="" />
                     </SliderImgContainer>
                     <SliderText>
-                      <SliderQuoteShape>
+                      {/* <SliderQuoteShape>
                         <img src={imgQuote} alt="" className="img-fluid" />
-                      </SliderQuoteShape>
+                      </SliderQuoteShape> */}
+                      <Title variant="card" mb={0} mt={3}>
+                        PROBLEM
+                      </Title>
                       <Text color="dark" my={2}>
-                        Top students should be innovators, not mere employees
+                        Less than 1/3 of college graduates are content with the
+                        jobs they are working
                       </Text>
                       <Title variant="card" mb={0} mt={3}>
-                        Maria Vesconti
+                        SOLUTION
                       </Title>
-                      <Text variant="small">Designer at Creativex</Text>
+                      <Text color="dark" my={2}>
+                        Provide real world insight and experience so students
+                        can get a better grasp of what they want to do
+                      </Text>
+                      {/* <Text variant="small">Designer at Creativex</Text> */}
                     </SliderText>
                   </SliderCard>
                 </SliderItem>

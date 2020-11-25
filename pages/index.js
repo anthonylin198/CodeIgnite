@@ -24,6 +24,7 @@ import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/landing/Hero";
 import Content from "../sections/landing/Content";
 import Testimonials from "../sections/landing/Testimonials";
+import Fact from "../sections/landing/Fact";
 import CTA from "../sections/landing/CTA";
 import Courses2 from "../sections/landing/Courses2";
 import Features from "../sections/landing/Features";
@@ -39,8 +40,10 @@ export default function Home() {
         {/* <Navbar toggle={toggle} /> */}
         {/* Hero Section */}
         <Hero />
+        {/* <Testimonials />
+        <Fact /> */}
         <Content />
-        <Testimonials />
+
         <CTA />
         {/* <Courses2 /> */}
         {/* <Features /> */}

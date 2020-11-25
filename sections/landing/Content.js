@@ -64,14 +64,23 @@ const Feature = () => (
             data-aos-delay="500"
           >
             <Box>
-              <Title color="light">Creating Problem Solvers.</Title>
+              <Title color="light">Why Us?</Title>
               <Text color="light" opacity={0.9}>
-                Our curriculum is designed to give students an entrepreneurial
-                mindset and the technical ability to bring their ideas to life
-                and become the technical leaders of tomorrow
+                <b style={{ color: "yellow" }}>
+                  80% of college students change their major at least once.
+                </b>{" "}
+                Our flexible program is designed to give students practical
+                project-based experiences to start thinking earlier.
               </Text>
+              <br></br>
+              <Text color="light" opacity={0.9}>
+                We foster an entrepreneurial mindset and technical tracks
+                including software engineering and finance to empower students
+                to bring their ideas to life
+              </Text>
+
               <ScrollButton
-                to="courses"
+                to="curriculum"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -79,7 +88,7 @@ const Feature = () => (
                 offset={-80}
                 mt={4}
               >
-                Get Started
+                View Our Curriculum
               </ScrollButton>
             </Box>
           </Col>
