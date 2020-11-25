@@ -1,7 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Box, Text, InputGroup } from "../../components/Core";
+
+const FormContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const CTA = () => {
   return (
@@ -18,16 +24,19 @@ const CTA = () => {
                   email to be notified upon completion
                 </Text>
                 <div className="d-flex flex-column align-items-center pt-3">
-                  {/* Go to the button and add the title link thing */}
-                  <InputGroup
-                    icon={<i className="icon icon-email-84" />}
-                    placeholder="Email address"
-                    className="text-center"
-                    pr="4.125rem"
-                  />
-                  <Button linkTo="overview" mb={2}>
-                    Submit
-                  </Button>
+                  <FormContainer>
+                    {/* Go to the button and add the title link thing */}
+                    <InputGroup
+                      icon={<i className="icon icon-email-84" />}
+                      placeholder="Email address"
+                      className="text-center"
+                      pr="4.125rem"
+                    />
+
+                    <Button linkTo="overview" ml="2">
+                      Submit
+                    </Button>
+                  </FormContainer>
                 </div>
               </Box>
             </Col>

@@ -78,8 +78,10 @@ const Feature = () => (
                 including software engineering and finance to empower students
                 to bring their ideas to life
               </Text>
-
-              <ScrollButton
+              <Button linkTo="/overview" mt={4}>
+                View Our Curriculum
+              </Button>
+              {/* <ScrollButton
                 to="curriculum"
                 smooth={true}
                 duration={500}
@@ -89,7 +91,7 @@ const Feature = () => (
                 mt={4}
               >
                 View Our Curriculum
-              </ScrollButton>
+              </ScrollButton> */}
             </Box>
           </Col>
           <Col md="8" lg="5" className="order-lg-1 mt-5 mt-lg-0">
