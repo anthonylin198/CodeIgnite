@@ -36,6 +36,7 @@ const Loader = styled.div`
   z-index: 9999999999;
   opacity: 1;
   visibility: visible;
+  /* transition: all 0.2s ease-out 0.2s; */
   transition: all 0.2s ease-out 0.2s;
   &.inActive {
     opacity: 0;
