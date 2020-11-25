@@ -14,8 +14,10 @@ const overview = () => {
       <PageWrapper headerDark footerDark>
         <HeroCenterDark
           title="Program Overview"
-          children="Creating the Technical Leaders of Tomorrow"
+          children="Fully Intergrated Learning Portal and Innovative 3-Step Curriculum"
         />
+        <PortalContent />
+
         <Content1 />
         {/* <Feature2 /> */}
         <Content2 />

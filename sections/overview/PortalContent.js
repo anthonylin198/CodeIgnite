@@ -34,6 +34,9 @@ const IconButton = styled(Box)`
   }
 `;
 
+const BGSection = styled(Section)`
+  background-color: #f9f9f9;
+`;
 const Content = () => {
   const gContext = useContext(GlobalContext);
 
@@ -44,13 +47,17 @@ const Content = () => {
 
   return (
     <>
-      <Section>
+      <BGSection>
         <Container>
           <Row className="justify-content-center pb-5 mb-5">
             <Title variant="hero" className="mb-0">
-              The Portal
+              The Learning Portal
             </Title>
           </Row>
+          <Row className="justify-content-center pb-5 mb-5">
+            <Text>Check out</Text>
+          </Row>
+
           <Box borderRadius={10} className="position-relative overflow-hidden">
             <img src={imgVideo} alt="" className="img-fluid" />
             <IconButton onClick={openVideoModal}>
@@ -58,7 +65,7 @@ const Content = () => {
             </IconButton>
           </Box>
         </Container>
-      </Section>
+      </BGSection>
     </>
   );
 };
