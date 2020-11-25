@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import imgRounded from "../../assets/image/png/l2-content1-oval.png";
-import imgHalf from "../../assets/image/jpeg/l2-content1-bg.jpg";
+import imgRounded from "../../assets/image/png/start.png";
+import imgHalf from "../../assets/image/png/startup.png";
 
 const ImageHalfContainer = styled(Box)`
   position: static;

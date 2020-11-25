@@ -5,13 +5,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import imgRounded from "../../assets/image/png/l2-content1-oval.png";
-import imgHalf from "../../assets/image/jpeg/l2-content1-bg.jpg";
+import imgRounded from "../../assets/image/png/tech.png";
+import imgHalf from "../../assets/image/png/technical.png";
 
+const BGDiv = styled.div`
+  background-color: #f9f9f9;
+`;
 const ImageHalfContainer = styled(Box)`
   position: static;
   right: -260px;
-  z-index: -1;
+  z-index: 1;
   height: 100%;
 
   .img-half {
@@ -59,7 +62,7 @@ const ImageBottom = styled(Box)`
 
 const Content1 = () => (
   <>
-    <div className="overflow-hidden">
+    <BGDiv className="overflow-hidden">
       <Container>
         <Row>
           <Col
@@ -106,7 +109,7 @@ const Content1 = () => (
           </Col>
         </Row>
       </Container>
-    </div>
+    </BGDiv>
   </>
 );
 

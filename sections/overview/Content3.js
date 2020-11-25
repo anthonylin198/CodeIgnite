@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import imgRounded from "../../assets/image/png/l2-content1-oval.png";
-import imgHalf from "../../assets/image/jpeg/l2-content1-bg.jpg";
+import imgRounded from "../../assets/image/png/production.png";
+import imgHalf from "../../assets/image/png/startupspace.png";
 
 const ImageHalfContainer = styled(Box)`
   position: static;
@@ -79,7 +79,8 @@ const Content1 = () => (
                 <Text>
                   After coming up with ideas and gaining technical skills,
                   students can either start building their own MVP, or team up
-                  with students of different skill sets to launch
+                  with students of different skill sets to launch.
+                  asdasdasdasdasdasd asdasdasdasdasdasdasdasdasd asdasdasdas
                 </Text>
                 <Button mt={4}>Get Started</Button>
               </div>

@@ -17,9 +17,9 @@ const overview = () => {
           children="Creating the Technical Leaders of Tomorrow"
         />
         <Content1 />
-        <Feature2 />
+        {/* <Feature2 /> */}
         <Content2 />
-        <Feature2 />
+        {/* <Feature2 /> */}
         <Content3 />
         <PortalContent />
         <CTA />
