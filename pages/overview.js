@@ -16,7 +16,7 @@ const overview = () => {
           title="Program Overview"
           children="Fully Intergrated Learning Portal and Innovative 3-Step Curriculum"
         />
-        <PortalContent />
+        {/* <PortalContent /> */}
 
         <Content1 />
         {/* <Feature2 /> */}
