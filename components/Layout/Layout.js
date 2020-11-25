@@ -36,7 +36,7 @@ const Loader = styled.div`
   z-index: 9999999999;
   opacity: 1;
   visibility: visible;
-  transition: all 1s ease-out 1.5s;
+  transition: all 0.2s ease-out 0.2s;
   &.inActive {
     opacity: 0;
     visibility: hidden;
@@ -143,7 +143,7 @@ const Layout = ({ children, pageContext }) => {
         {/* put loading here */}
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           {/* https://tobiasahlin.com/spinkit/ */}
-          <LoaderContainer>
+          {/* <LoaderContainer>
             <div className="sk-chase">
               <div className="sk-chase-dot"></div>
               <div className="sk-chase-dot"></div>
@@ -154,7 +154,7 @@ const Layout = ({ children, pageContext }) => {
             </div>
             <br></br>
             <LoadingText>Please Wait...</LoadingText>
-          </LoaderContainer>
+          </LoaderContainer> */}
           <div className="load-circle">
             <span className="one" />
           </div>
