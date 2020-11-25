@@ -18,23 +18,15 @@ const CTA = () => {
           <Row className="justify-content-center">
             <Col md="8" lg="8">
               <Box className="text-center">
-                <Title color="dark">Join the Waiting List</Title>
+                <Title color="dark">Check Out Our Curriculum</Title>
                 <Text mb={4} color="dark" opacity={1}>
-                  The learning portal is currently under development. Enter your
-                  email to be notified upon completion
+                  Our curriculum is designed to develop an entrepreneurial
+                  mindset to succeed in today's job market
                 </Text>
                 <div className="d-flex flex-column align-items-center pt-3">
                   <FormContainer>
-                    {/* Go to the button and add the title link thing */}
-                    <InputGroup
-                      icon={<i className="icon icon-email-84" />}
-                      placeholder="Email address"
-                      className="text-center"
-                      pr="4.125rem"
-                    />
-
                     <Button linkTo="overview" ml="2">
-                      Submit
+                      Go Now
                     </Button>
                   </FormContainer>
                 </div>
