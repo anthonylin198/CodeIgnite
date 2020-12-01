@@ -79,8 +79,9 @@ const Content1 = () => (
                 <Text>
                   After coming up with ideas and gaining technical skills,
                   students can either start building their own MVP, or team up
-                  with students of different skill sets to launch.
-                  asdasdasdasdasdasd asdasdasdasdasdasdasdasdasd asdasdasdas
+                  with students of different skill sets to launch. Students will
+                  be able to get mentorship for their ideas and building out a
+                  functional MVP
                 </Text>
                 <Button mt={4}>Get Started</Button>
               </div>

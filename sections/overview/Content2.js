@@ -80,12 +80,11 @@ const Content1 = () => (
                   Technical Path
                 </Title>
                 <Text>
-                  Based off the student's ideation and interest, students have
-                  the ability to choose the path that they want to build,
-                  ranging from computer science to data science and machine
-                  learning. We provide full comprehensive courses that actually
-                  give students the skills they need to bring their ideas to
-                  life.
+                  Based off the student's ideation process and interests, they
+                  have the ability to choose their specialization path, ranging
+                  from computer science to data science and machine learning. We
+                  provide full comprehensive courses that give students the
+                  skills they need to bring their ideas to life.
                 </Text>
                 <Button mt={4}>Get Started</Button>
               </div>

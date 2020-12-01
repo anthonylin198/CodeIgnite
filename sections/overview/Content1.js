@@ -77,11 +77,11 @@ const Content1 = () => (
                   Startup School
                 </Title>
                 <Text>
-                  In this first phase, students will be able to identify
-                  problems in the real world and come up with solutions with the
-                  same tactics that companies today started. Students will gain
-                  insights into various fields and get a better idea of what
-                  they want to specialize in
+                  Students will be able to identify problems in the real world
+                  and come up with solutions with the same tactics that
+                  companies today started. Students will gain insights into
+                  various fields ranging from computer science to finance and to
+                  get a better idea of what they want to specialize in.
                 </Text>
                 <Button mt={4}>Download Syllabus</Button>
               </div>
