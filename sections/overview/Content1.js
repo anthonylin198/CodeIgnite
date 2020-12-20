@@ -83,7 +83,7 @@ const Content1 = () => (
                   various fields ranging from computer science to finance and to
                   get a better idea of what they want to specialize in.
                 </Text>
-                <Button mt={4}>Download Syllabus</Button>
+                {/* <Button mt={4}>Download Syllabus</Button> */}
               </div>
             </Section>
           </Col>

@@ -86,7 +86,7 @@ const Content1 = () => (
                   provide full comprehensive courses that give students the
                   skills they need to bring their ideas to life.
                 </Text>
-                <Button mt={4}>Get Started</Button>
+                {/* <Button mt={4}>Get Started</Button> */}
               </div>
             </Section>
           </Col>

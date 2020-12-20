@@ -83,7 +83,7 @@ const Content1 = () => (
                   be able to get mentorship for their ideas and building out a
                   functional MVP
                 </Text>
-                <Button mt={4}>Get Started</Button>
+                {/* <Button mt={4}>Get Started</Button> */}
               </div>
             </Section>
           </Col>
